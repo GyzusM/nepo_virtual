@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#root {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px 0;
+  background-color: #f2f2f2;
 }
 
-.App-link {
-  color: #61dafb;
+/*-- Contenedor Main --*/
+.main {
+  width: 100%;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+}
+/*-- Video Fondo --*/
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-- Contenido --*/
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*background: url('./img/fondo_animado.svg');*/
+  background-size: cover;
+  background-position: center center;
+}
+/*-- Botones Bienvenida --*/
+.btn-bienvenida{
+  width: 350px;
+  height: 80px;
+  margin: 40px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: orange;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgb(215, 141, 5) 5px 5px;
+}
+
+.btn-bienvenida:hover{
+  width: 370px;
+  height: 120px;
+  box-shadow: rgb(215, 141, 5) 10px 10px;
+}
+
+/*-- Titulo Bienvenida --*/
+.titulo-bienvenida{
+  color:#fff;
+  margin-bottom: 20px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.mascota{
+  width: 170px;
+  height: 305px;
+  background: url('./img/mascotaNepo.png');
+}
+
+/*-- Nepo --*/
+.nepo {
+  background: url(./img/nepo.svg);
+  background-repeat: no-repeat;
+  margin: 150px auto;
+  width: 1154px;
+  height: 590px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*-- CUADRANTES
+    quadrant-1 = 2 columnas & 3 filas
+    quadrant-2 = 3 columnas & 3 filas
+    quadrant-3 = 2 columnas & 4 filas
+    quadrant-4 = 3 columnas & 4 filas
+--*/
+.quadrant-1{
+  width: 142px;
+  height: 200px;
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quadrant-2{
+  width: 208px;
+  height: 199px;
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quadrant-3{
+  width: 142px;
+  height: 228px;
+  margin-top: 0px;
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.quadrant-4{
+  width: 208px;
+  height: 228px;
+  margin-top: 0px;
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* LAS COLUMNAS VAN EN SENTIDO DE LAS MANECILLAS DEL RELOJ */
+/*Columna 1*/
+.column-1{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.column-2{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.column-3{
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
