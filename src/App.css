@@ -81,12 +81,12 @@ video {
 .mascota{
   width: 170px;
   height: 305px;
-  background: url('./img/mascotaNepo.png');
+  background: url('./assets/img/mascotaNepo.png');
 }
 
 /*-- Nepo --*/
 .nepo {
-  background: url(./img/nepo.svg);
+  background: url(./assets/img/nepo.svg);
   background-repeat: no-repeat;
   margin: 150px auto;
   width: 1154px;

@@ -3,7 +3,7 @@ import Grano from './elements/Grano';
 
 const NepoBasico = () => {
   const [clickedUp, flipDown] = useState(false);
-  const [clickedDown, flipUp] = useState(false);
+  /*const [clickedDown, flipUp] = useState(false);*/
 
   return (
     

@@ -8,7 +8,7 @@ import grayDown from '../../assets/img/grisAbajo.svg';
 import yellowDown from '../../assets/img/amarilloAbajo.svg';
 import blueDown from '../../assets/img/azulAbajo.svg';
 import redDown from '../../assets/img/rojoAbajo.svg';
-import greenDown from '../../assets/img/verde-Abajo.svg';
+import greenDown from '../../assets/img/verdeAbajo.svg';
 // TERMINOS
 
 /* 
