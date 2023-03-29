@@ -9,11 +9,10 @@ import yellowDown from '../../assets/img/amarilloAbajo.svg';
 import blueDown from '../../assets/img/azulAbajo.svg';
 import redDown from '../../assets/img/rojoAbajo.svg';
 import greenDown from '../../assets/img/verdeAbajo.svg';
+
+
 // TERMINOS
 
-/* 
-  r1-fila1
-*/
 const Grano = styled.div`
   width: 56px;
   height: 67px;
@@ -21,46 +20,26 @@ const Grano = styled.div`
   margin-left: 8px;
   margin-right: 8px;
   cursor: pointer;
-  
-  ${props => props.gray && css`
-    background-image: url(${grayUp});
-  `}
 
-  ${props => props.grayDown && css`
-    background-image: url(${grayDown});
-  `}
+  ${props =>  props.color === 'grayup' ? css`background: url(${grayUp});` : ''};
 
-  ${props => props.yellow && css`
-    background-image: url(${yellowUp});
-  `}
+  ${props =>  props.color === 'graydown' ? css`background: url(${grayDown});` : ''};
 
-  ${props => props.yellowDown && css`
-    background-image: url(${yellowDown});
-  `}
+  ${props =>  props.color === 'yellowup' ? css`background: url(${yellowUp});` : ''};
 
-  ${props => props.blue && css`
-    background-image: url(${blueUp});
-  `}
+  ${props =>  props.color === 'yellowdown' ? css`background: url(${yellowDown});` : ''};
 
-  ${props => props.blueDown && css`
-    background-image: url(${blueDown});
-  `}
+  ${props =>  props.color === 'blueup' ? css`background: url(${blueUp});` : ''};
 
-  ${props => props.red && css`
-    background-image: url(${redUp});
-  `}
+  ${props =>  props.color === 'bluedown' ? css`background: url(${blueDown});` : ''};
 
-  ${props => props.redDown && css`
-    background-image: url(${redDown});
-  `}
+  ${props =>  props.color === 'redup' ? css`background: url(${redUp});` : ''};
 
-  ${props => props.green && css`
-    background-image: url(${greenUp});
-  `}
+  ${props =>  props.color === 'reddown' ? css`background: url(${redDown});` : ''};
 
-  ${props => props.greenDown && css`
-    background-image: url(${greenDown});
-  `}
+  ${props =>  props.color === 'greenup' ? css`background: url(${greenUp});` : ''};
+
+  ${props =>  props.color === 'greendown' ? css`background: url(${greenDown});` : ''};
 
   ${props => props.r1 && css `
     margin-top: 15px;

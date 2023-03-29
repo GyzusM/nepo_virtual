@@ -4,7 +4,7 @@ import videoBg from '../assets/nepohualli.mp4'
 
 const MenuBienvenida = () => {
 
-  const [sesion, abrirNepoBasico] = useState(false);
+  const [sesion, abrirNepoBasico] = useState(true);
   return (
     <>
       {sesion === false ?
