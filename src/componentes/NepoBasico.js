@@ -1,43 +1,34 @@
 import React, {useState} from 'react';
 import Grano from './elements/Grano';
-
+import './elements/grano.css';
 
 const NepoBasico = () => {
 
-  const [btnState, setBtnState] = useState(false);
-  
-  
-  function handleClick(e){
-    setBtnState(btnState => !btnState);
-    
-    if (btnState === false){
-      e.target.style.transform = 'rotate(0)';
-    }else{
-      e.target.style.transform = 'rotate(180deg)';
+  const [counter, setCounter] =useState(0);
+
+  function counterLogic(e){
+    if (e.target.classList[2] === "gray"){
+      if(e.target.classList[3] === "flip-r1"){
+        setCounter(counter + 10)
+      }else{
+        setCounter(counter - 10)
+      }
+    }else if(e.target.classList[2] === "frio"){
+      if(e.target.classList[3] === "flip-r2"){
+        setCounter(counter + 5)
+      }else{
+        setCounter(counter - 5);
+      }
+    }
+      
     }
     
-    //function logic (){
-    //  const grano = e.target;
-    //  const elementStyle = window.getComputedStyle(grano);
-    //  const elementTransform = elementStyle.getPropertyValue('transform','rotate');
-    //  return(console.log(elementTransform));
-    //}
-
     
-    return(
-      console.log(btnState))    
+    //e.target.classList[2] === "frio" ? setCounter(counter + 1000) : setCounter(counter - 1000);
+    //e.target.classList[3] === "flip-r2" && e.target.classList[2] === "frio" ? setCounter(counter + 5) : setCounter(counter - 5);
     
-  }
-
-  //let gray1 = btnState ? 'grayup' : 'graydown';
-  //let gray2 = btnState ? 'grayup' : 'graydown';
-  //let gray3 = btnState ? 'grayup' : 'graydown';
-  //let gray4 = btnState ? 'grayup' : 'graydown';
-  //let gray5 = btnState ? 'grayup' : 'graydown';
-  //let gray6 = btnState ? 'grayup' : 'graydown';
-    //e.target.style.transform = 'rotate(180deg)';
-    //console.log(props);
   
+
   return (
     
     <div className='main'>
@@ -47,14 +38,22 @@ const NepoBasico = () => {
         <div className='quadrant-1'>
           
           <div className='column-1'>
-            <Grano color='grayup' onClick={handleClick} r1 />
-            <Grano color='grayup' onClick={handleClick} r2 />
-            <Grano color='grayup' onClick={handleClick} r3 />
+            <Grano onClick={event => {
+              event.target.classList.toggle("flip-r1");
+              counterLogic(event);
+            }} gray r1 className="gray" />
+
+            <Grano onClick={event => {
+              event.target.classList.toggle("flip-r2")
+              counterLogic(event);
+              }} gray r2 className="frio"/>
+
+            <Grano onClick={event => {event.target.classList.toggle("flip-r3")}} gray r3 />
           </div>
           <div className='column-2'>
-            <Grano color='grayup' onClick={handleClick} r1 />
-            <Grano color='grayup' onClick={handleClick} r2 />
-            <Grano color='grayup' onClick={handleClick} r3 />  
+            <Grano onClick={event => {event.target.classList.toggle("rotate")}} gray r1 />
+            <Grano onClick={event => {event.target.classList.toggle("rotate")}} gray r2 />
+            <Grano onClick={event => {event.target.classList.toggle("rotate")}} gray r3 /> 
             
             
           </div>
@@ -63,173 +62,173 @@ const NepoBasico = () => {
         <div className='quadrant-2'>
           
           <div className='column-1'>
-            <Grano color='yellowup' r1 />
-            <Grano color='yellowup' r2 />
-            <Grano color='yellowup' r3 />
+            <Grano yellow r1 />
+            <Grano yellow r2 />
+            <Grano yellow r3 />
           </div>
           <div className='column-2'>
-            <Grano color='yellowup' r1 />
-            <Grano color='yellowup' r2 />
-            <Grano color='yellowup' r3 />
+            <Grano yellow r1 />
+            <Grano yellow r2 />
+            <Grano yellow r3 />
           </div>
           <div className='column-3'>
-            <Grano color='yellowup' r1 />
-            <Grano color='yellowup' r2 />
-            <Grano color='yellowup' r3 />
+            <Grano yellow r1 />
+            <Grano yellow r2 />
+            <Grano yellow r3 />
           </div>
         </div>
         <div className='quadrant-2'>
 
           <div className='column-1'>
-            <Grano color='blueup' r1 />
-            <Grano color='blueup' r2 />
-            <Grano color='blueup' r3 />
+            <Grano blue r1 />
+            <Grano blue r2 />
+            <Grano blue r3 />
           </div>
           <div className='column-2'>
-            <Grano color='blueup' r1 />
-            <Grano color='blueup' r2 />
-            <Grano color='blueup' r3 />
+            <Grano blue r1 />
+            <Grano blue r2 />
+            <Grano blue r3 />
           </div>
           <div className='column-3'>
-            <Grano color='blueup' r1 />
-            <Grano color='blueup' r2 />
-            <Grano color='blueup' r3 />
+            <Grano blue r1 />
+            <Grano blue r2 />
+            <Grano blue r3 />
           </div>
         </div>
         <div className='quadrant-2'>
 
           <div className='column-1'>
-            <Grano color='redup' r1 />
-            <Grano color='redup' r2 />
-            <Grano color='redup' r3 />
+            <Grano red r1 />
+            <Grano red r2 />
+            <Grano red r3 />
           </div>
           <div className='column-2'>
-            <Grano color='redup' r1 />
-            <Grano color='redup' r2 />
-            <Grano color='redup' r3 />
+            <Grano red r1 />
+            <Grano red r2 />
+            <Grano red r3 />
           </div>
           <div className='column-3'>
-            <Grano color='redup' r1 />
-            <Grano color='redup' r2 />
-            <Grano color='redup' r3 />
+            <Grano red r1 />
+            <Grano red r2 />
+            <Grano red r3 />
           </div>
         </div>
         <div className='quadrant-2'>
 
           <div className='column-1'>
-            <Grano color='greenup' r1 />
-            <Grano color='greenup' r2 />
-            <Grano color='greenup' r3 />
+            <Grano green r1 />
+            <Grano green r2 />
+            <Grano green r3 />
           </div>
           <div className='column-2'>
-            <Grano color='greenup' r1 />
-            <Grano color='greenup' r2 />
-            <Grano color='greenup' r3 />
+            <Grano green r1 />
+            <Grano green r2 />
+            <Grano green r3 />
           </div>
           <div className='column-3'>
-            <Grano color='greenup' r1 />
-            <Grano color='greenup' r2 />
-            <Grano color='greenup' r3 />
+            <Grano green r1 />
+            <Grano green r2 />
+            <Grano green r3 />
           </div>
         </div>
 
         <div className='quadrant-3'>
 
           <div className='column-1'>
-            <Grano color='graydown' r1 z4 />
-            <Grano color='graydown' r2 z3 />
-            <Grano color='graydown' r3 z2 />
-            <Grano color='graydown' r4 z1 />
+            <Grano gray r1 className='rotate z4' />
+            <Grano gray r2 className='rotate z3' />
+            <Grano gray r3 className='rotate z2' />
+            <Grano gray r4 className='rotate z1' />
           </div>
           <div className='column-2'>
-            <Grano color='graydown' r1 z4 />
-            <Grano color='graydown' r2 z3 />
-            <Grano color='graydown' r3 z2 />
-            <Grano color='graydown' r4 z1 />
+            <Grano gray r1 className='rotate z4' />
+            <Grano gray r2 className='rotate z3' />
+            <Grano gray r3 className='rotate z2' />
+            <Grano gray r4 className='rotate z1' />
           </div>
         </div>
         <div className='quadrant-4'>
 
           <div className='column-1'>
-            <Grano color='yellowdown' r1 z4 />
-            <Grano color='yellowdown' r2 z3 />
-            <Grano color='yellowdown' r3 z2 />
-            <Grano color='yellowdown' r4 z1 />
+            <Grano yellow r1 className='rotate z4' />
+            <Grano yellow r2 className='rotate z3' />
+            <Grano yellow r3 className='rotate z2' />
+            <Grano yellow r4 className='rotate z1' />
           </div>
           <div className='column-2'>
-            <Grano color='yellowdown' r1 z4 />
-            <Grano color='yellowdown' r2 z3 />
-            <Grano color='yellowdown' r3 z2 />
-            <Grano color='yellowdown' r4 z1 />
+            <Grano yellow r1 className='rotate z4' />
+            <Grano yellow r2 className='rotate z3' />
+            <Grano yellow r3 className='rotate z2' />
+            <Grano yellow r4 className='rotate z1' />
           </div>
           <div className='column-3'>
-            <Grano color='yellowdown' r1 z4 />
-            <Grano color='yellowdown' r2 z3 />
-            <Grano color='yellowdown' r3 z2 />
-            <Grano color='yellowdown' r4 z1 />
+            <Grano yellow r1 className='rotate z4' />
+            <Grano yellow r2 className='rotate z3' />
+            <Grano yellow r3 className='rotate z2' />
+            <Grano yellow r4 className='rotate z1' />
           </div>
         </div>
         <div className='quadrant-4'>
 
           <div className='column-1'>
-            <Grano color='bluedown' r1 z4 />
-            <Grano color='bluedown' r2 z3 />
-            <Grano color='bluedown' r3 z2 />
-            <Grano color='bluedown' r4 z1 />
+            <Grano blue r1 className='rotate z4' />
+            <Grano blue r2 className='rotate z3' />
+            <Grano blue r3 className='rotate z2' />
+            <Grano blue r4 className='rotate z1' />
           </div>
           <div className='column-2'>
-            <Grano color='bluedown' r1 z4 />
-            <Grano color='bluedown' r2 z3 />
-            <Grano color='bluedown' r3 z2 />
-            <Grano color='bluedown' r4 z1 />
+            <Grano blue r1 className='rotate z4' />
+            <Grano blue r2 className='rotate z3' />
+            <Grano blue r3 className='rotate z2' />
+            <Grano blue r4 className='rotate z1' />
           </div>
           <div className='column-3'>
-            <Grano color='bluedown' r1 z4 />
-            <Grano color='bluedown' r2 z3 />
-            <Grano color='bluedown' r3 z2 />
-            <Grano color='bluedown' r4 z1 />
+            <Grano blue r1 className='rotate z4' />
+            <Grano blue r2 className='rotate z3' />
+            <Grano blue r3 className='rotate z2' />
+            <Grano blue r4 className='rotate z1' />
           </div>
         </div>
         <div className='quadrant-4'>
 
           <div className='column-1'>
-            <Grano color='reddown' r1 z4 />
-            <Grano color='reddown' r2 z3 />
-            <Grano color='reddown' r3 z2 />
-            <Grano color='reddown' r4 z1 />
+            <Grano yellow r1 className='rotate z4' />
+            <Grano yellow r2 className='rotate z3' />
+            <Grano yellow r3 className='rotate z2' />
+            <Grano yellow r4 className='rotate z1' />
           </div>
           <div className='column-2'>
-            <Grano color='reddown' r1 z4 />
-            <Grano color='reddown' r2 z3 />
-            <Grano color='reddown' r3 z2 />
-            <Grano color='reddown' r4 z1 />
+            <Grano yellow r1 className='rotate z4' />
+            <Grano yellow r2 className='rotate z3' />
+            <Grano yellow r3 className='rotate z2' />
+            <Grano yellow r4 className='rotate z1' />
           </div>
           <div className='column-3'>
-            <Grano color='reddown' r1 z4 />
-            <Grano color='reddown' r2 z3 />
-            <Grano color='reddown' r3 z2 />
-            <Grano color='reddown' r4 z1 />
+            <Grano yellow r1 className='rotate z4' />
+            <Grano yellow r2 className='rotate z3' />
+            <Grano yellow r3 className='rotate z2' />
+            <Grano yellow r4 className='rotate z1' />
           </div>
         </div>
         <div className='quadrant-4'>
 
           <div className='column-1'>
-            <Grano color='greendown' r1 z4 />
-            <Grano color='greendown' r2 z3 />
-            <Grano color='greendown' r3 z2 />
-            <Grano color='greendown' r4 z1 />
+            <Grano green r1 className='rotate z4' />
+            <Grano green r2 className='rotate z3' />
+            <Grano green r3 className='rotate z2' />
+            <Grano green r4 className='rotate z1' />
           </div>
           <div className='column-2'>
-            <Grano color='greendown' r1 z4 />
-            <Grano color='greendown' r2 z3 />
-            <Grano color='greendown' r3 z2 />
-            <Grano color='greendown' r4 z1 />
+            <Grano green r1 className='rotate z4' />
+            <Grano green r2 className='rotate z3' />
+            <Grano green r3 className='rotate z2' />
+            <Grano green r4 className='rotate z1' />
           </div>
           <div className='column-3'>
-            <Grano color='greendown' r1 z4 />
-            <Grano color='greendown' r2 z3 />
-            <Grano color='greendown' r3 z2 />
-            <Grano color='greendown' r4 z1 />
+            <Grano green r1 className='rotate z4' />
+            <Grano green r2 className='rotate z3' />
+            <Grano green r3 className='rotate z2' />
+            <Grano green r4 className='rotate z1' />
           </div>
         </div>
       </div>
