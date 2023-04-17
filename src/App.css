@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 
 * {
   margin: 0;
@@ -12,9 +13,69 @@
   display: flex;
   justify-content: center;
   padding: 5px 0;
-  background-color: #f2f2f2;
+  background: url('./assets/img/fondo_nepo.svg');
+  background-size: cover;
+  background-position: center center;
 }
 
+header {
+  /*background-color: #CCE8D5;*/
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  font-family: 'Montserrat';
+}
+
+.content-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  display: inline-flex;
+  display: block;
+  margin: 0 20px;
+  text-align: center;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li > a:visited{
+  color: #fff;
+}
+
+header .content-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header .content-header nav ul li{
+  margin: 0 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: .5s;
+  background-color: rgb(215, 141, 5);
+}
+
+header .content-header nav ul li:hover{
+  background-color: rgb(248, 172, 29);
+}
 /*-- Contenedor Main --*/
 .main {
   width: 100%;
@@ -95,12 +156,33 @@ video {
   flex-flow: row wrap;
 }
 
+.pantalla {
+  width: 1154px;
+  height: 30px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -25px;
+  z-index: 5;
+}
+
+
 /*-- CUADRANTES
     quadrant-1 = 2 columnas & 3 filas
     quadrant-2 = 3 columnas & 3 filas
     quadrant-3 = 2 columnas & 4 filas
     quadrant-4 = 3 columnas & 4 filas
+    down = cuadrantes inferiores
 --*/
+
+.bottom {
+  margin-bottom: 25px;
+  transform: rotate(180deg);
+}
 .quadrant-1{
   width: 142px;
   height: 200px;
