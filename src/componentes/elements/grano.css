@@ -1,24 +1,43 @@
-
-.gray {
-  background: url('../../assets/img/grisArriba.svg');
+.flipdown-r1 {
+  transform: rotate(180deg);
+  margin-top: 56px;
+  z-index: 4;
 }
 
-.flip-r1 {
+.flipdown-r2 {
   transform: rotate(180deg);
-  margin-top: 57px;
+  margin-top: 56px;
   z-index: 3;
 }
 
-.flip-r2 {
+.flipdown-r3 {
   transform: rotate(180deg);
-  margin-top: 57px;
+  margin-top: 56px;
   z-index: 2;
 }
 
-.flip-r3 {
+.flipup-r1 {
   transform: rotate(180deg);
-  margin-top: 56px;
+  margin-top: 60px;
   z-index: 1;
+}
+
+.flipup-r2 {
+  transform: rotate(180deg);
+  margin-top: 60px;
+  z-index: 2;
+}
+
+.flipup-r3 {
+  transform: rotate(180deg);
+  margin-top: 60px;
+  z-index: 3;
+}
+
+.flipup-r4 {
+  transform: rotate(180deg);
+  margin-top: 60px;
+  z-index: 4;
 }
 
 .r3 {
