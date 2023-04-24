@@ -4,7 +4,7 @@ import './elements/grano.css';
 import src from '../assets/img/mascotaMini.svg';
 import MenuBienvenida from './MenuBienvenida';
 
-const NepoBasico = () => {
+const NepoAvanzado = () => {
   const [counter, setCounter] =useState(0);
   const [toMenu, setToMenu] = useState(false);
 
@@ -1129,7 +1129,7 @@ const NepoBasico = () => {
 
   return (
     <>
-    {toMenu === false ? 
+    {toMenu === false ?
     <>
       <header>
         <div className='content-header'>
@@ -1148,7 +1148,7 @@ const NepoBasico = () => {
               </li>
             </ul>
           </nav>
-        </div>     
+        </div>
       </header>
       
       <div className='nepo'>
@@ -1244,10 +1244,6 @@ const NepoBasico = () => {
             <Grano onClick={event => {counterLogic(event)}} green r2 className='blueUp greenUp8' />
             <Grano onClick={event => {counterLogic(event)}} green r3 className='blueUp greenUp9' />
           </div>
-        </div>
-        
-        <div className='pantalla-basico'>
-          {counter}
         </div>
         
         <div className='quadrant-3 bottom'>
@@ -1355,4 +1351,4 @@ const NepoBasico = () => {
     </>
   );
 };
-export default NepoBasico;
+export default NepoAvanzado;

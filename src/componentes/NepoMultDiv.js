@@ -4,8 +4,10 @@ import './elements/grano.css';
 import src from '../assets/img/mascotaMini.svg';
 import MenuBienvenida from './MenuBienvenida';
 
-const NepoBasico = () => {
+const NepoMult = () => {
   const [counter, setCounter] =useState(0);
+  const [counternumA, setNumA] = useState(0);
+  const [counternumB, setNumB] = useState(0);
   const [toMenu, setToMenu] = useState(false);
 
   function counterLogic(e){
@@ -16,11 +18,11 @@ const NepoBasico = () => {
       const gUp2 = document.querySelector(".gUp2");
       if (gUp2.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 50000000000000)
+        setCounter(counter + 50000000)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000000000000)
+          setCounter(counter - 50000000)
         }
       }
     }
@@ -29,10 +31,10 @@ const NepoBasico = () => {
       const gUp3 = document.querySelector(".gUp3");
       if (gUp3.classList.item(4) === "flipdown-r3" && gUp1.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 50000000000000)
+        setCounter(counter + 50000000)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000000000000)
+          setCounter(counter - 50000000)
         }
       }
     }
@@ -40,20 +42,20 @@ const NepoBasico = () => {
       const gUp2 = document.querySelector(".gUp2");
       if (gUp2.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 50000000000000)
+        setCounter(counter + 50000000)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 50000000000000)
+          setCounter(counter - 50000000)
       }
     }
     if (e.target.classList[3] === "gUp4"){
       const gUp5 = document.querySelector(".gUp5");
       if (gUp5.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 5000000000000)
+        setCounter(counter + 5000000)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000000000000)
+          setCounter(counter - 5000000)
         }
       }
     }
@@ -62,10 +64,10 @@ const NepoBasico = () => {
       const gUp6 = document.querySelector(".gUp6");
       if (gUp6.classList.item(4) === "flipdown-r3" && gUp4.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 5000000000000)
+        setCounter(counter + 5000000)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000000000000)
+          setCounter(counter - 5000000)
         }
       }
     }
@@ -73,10 +75,10 @@ const NepoBasico = () => {
       const gUp5 = document.querySelector(".gUp5");
       if (gUp5.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 5000000000000)
+        setCounter(counter + 5000000)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 5000000000000)
+          setCounter(counter - 5000000)
       }
     }
     /*-- GRANOS AMARILLOS SUPERIORES --*/
@@ -84,11 +86,11 @@ const NepoBasico = () => {
       const yUp2 = document.querySelector(".yUp2");
       if (yUp2.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 500000000000)
+        setCounter(counter + 500000)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500000000000)
+          setCounter(counter - 500000)
         }
       }
     }
@@ -97,10 +99,10 @@ const NepoBasico = () => {
       const yUp3 = document.querySelector(".yUp3");
       if (yUp3.classList.item(4) === "flipdown-r3" && yUp1.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 500000000000)
+        setCounter(counter + 500000)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500000000000)
+          setCounter(counter - 500000)
         }
       }
     }
@@ -108,21 +110,21 @@ const NepoBasico = () => {
       const yUp2 = document.querySelector(".yUp2");
       if (yUp2.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 500000000000)
+        setCounter(counter + 500000)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 500000000000)
+          setCounter(counter - 500000)
       }
     }
     if (e.target.classList[3] === "yUp4"){
       const yUp5 = document.querySelector(".yUp5");
       if (yUp5.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 50000000000)
+        setCounter(counter + 50000)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000000000)
+          setCounter(counter - 50000)
         }
       }
     }
@@ -131,10 +133,10 @@ const NepoBasico = () => {
       const yUp6 = document.querySelector(".yUp6");
       if (yUp6.classList.item(4) === "flipdown-r3" && yUp4.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 50000000000)
+        setCounter(counter + 50000)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000000000)
+          setCounter(counter - 50000)
         }
       }
     }
@@ -142,21 +144,21 @@ const NepoBasico = () => {
       const yUp5 = document.querySelector(".yUp5");
       if (yUp5.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 50000000000)
+        setCounter(counter + 50000)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 50000000000)
+          setCounter(counter - 50000)
       }
     }
     if (e.target.classList[3] === "yUp7"){
       const yUp8 = document.querySelector(".yUp8");
       if (yUp8.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 5000000000)
+        setCounter(counter + 5000)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000000000)
+          setCounter(counter - 5000)
         }
       }
     }
@@ -165,10 +167,10 @@ const NepoBasico = () => {
       const yUp9 = document.querySelector(".yUp9");
       if (yUp9.classList.item(4) === "flipdown-r3" && yUp7.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 5000000000)
+        setCounter(counter + 5000)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000000000)
+          setCounter(counter - 5000)
         }
       }
     }
@@ -176,10 +178,10 @@ const NepoBasico = () => {
       const yUp8 = document.querySelector(".yUp8");
       if (yUp8.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 5000000000)
+        setCounter(counter + 5000)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 5000000000)
+          setCounter(counter - 5000)
       }
     }
     /*-- GRANOS AZULES SUPERIORES --*/
@@ -187,11 +189,11 @@ const NepoBasico = () => {
       const bUp2 = document.querySelector(".bUp2");
       if (bUp2.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 500000000)
+        setCounter(counter + 500)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500000000)
+          setCounter(counter - 500)
         }
       }
     }
@@ -200,10 +202,10 @@ const NepoBasico = () => {
       const bUp3 = document.querySelector(".bUp3");
       if (bUp3.classList.item(4) === "flipdown-r3" && bUp1.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 500000000)
+        setCounter(counter + 500)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500000000)
+          setCounter(counter - 500)
         }
       }
     }
@@ -211,21 +213,21 @@ const NepoBasico = () => {
       const bUp2 = document.querySelector(".bUp2");
       if (bUp2.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 500000000)
+        setCounter(counter + 500)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 500000000)
+          setCounter(counter - 500)
       }
     }
     if (e.target.classList[3] === "bUp4"){
       const bUp5 = document.querySelector(".bUp5");
       if (bUp5.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 50000000)
+        setCounter(counter + 50)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000000)
+          setCounter(counter - 50)
         }
       }
     }
@@ -234,10 +236,10 @@ const NepoBasico = () => {
       const bUp6 = document.querySelector(".bUp6");
       if (bUp6.classList.item(4) === "flipdown-r3" && bUp4.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 50000000)
+        setCounter(counter + 50)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000000)
+          setCounter(counter - 50)
         }
       }
     }
@@ -245,21 +247,21 @@ const NepoBasico = () => {
       const bUp5 = document.querySelector(".bUp5");
       if (bUp5.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 50000000)
+        setCounter(counter + 50)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 50000000)
+          setCounter(counter - 50)
       }
     }
     if (e.target.classList[3] === "bUp7"){
       const bUp8 = document.querySelector(".bUp8");
       if (bUp8.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 5000000)
+        setCounter(counter + 5)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000000)
+          setCounter(counter - 5)
         }
       }
     }
@@ -268,10 +270,10 @@ const NepoBasico = () => {
       const bUp9 = document.querySelector(".bUp9");
       if (bUp9.classList.item(4) === "flipdown-r3" && bUp7.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 5000000)
+        setCounter(counter + 5)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000000)
+          setCounter(counter - 5)
         }
       }
     }
@@ -279,10 +281,10 @@ const NepoBasico = () => {
       const bUp8 = document.querySelector(".bUp8");
       if (bUp8.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 5000000)
+        setCounter(counter + 5)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 5000000)
+          setCounter(counter - 5)
       }
     }
     /*-- GRANOS ROJOS SUPERIORES --*/
@@ -290,11 +292,11 @@ const NepoBasico = () => {
       const rUp2 = document.querySelector(".rUp2");
       if (rUp2.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 500000)
+        setNumB(counternumB + 500)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500000)
+          setNumB(counternumB - 500)
         }
       }
     }
@@ -303,10 +305,10 @@ const NepoBasico = () => {
       const rUp3 = document.querySelector(".rUp3");
       if (rUp3.classList.item(4) === "flipdown-r3" && rUp1.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 500000)
+        setNumB(counternumB + 500)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500000)
+          setNumB(counternumB - 500)
         }
       }
     }
@@ -314,21 +316,21 @@ const NepoBasico = () => {
       const rUp2 = document.querySelector(".rUp2");
       if (rUp2.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 500000)
+        setNumB(counternumB + 500)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 500000)
+          setNumB(counternumB - 500)
       }
     }
     if (e.target.classList[3] === "rUp4"){
       const rUp5 = document.querySelector(".rUp5");
       if (rUp5.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 50000)
+        setNumB(counternumB + 50)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000)
+          setNumB(counternumB - 50)
         }
       }
     }
@@ -337,10 +339,10 @@ const NepoBasico = () => {
       const rUp6 = document.querySelector(".rUp6");
       if (rUp6.classList.item(4) === "flipdown-r3" && rUp4.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 50000)
+        setNumB(counternumB + 50)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50000)
+          setNumB(counternumB - 50)
         }
       }
     }
@@ -348,21 +350,21 @@ const NepoBasico = () => {
       const rUp5 = document.querySelector(".rUp5");
       if (rUp5.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 50000)
+        setNumB(counternumB + 50)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 50000)
+          setNumB(counternumB - 50)
       }
     }
     if (e.target.classList[3] === "rUp7"){
       const rUp8 = document.querySelector(".rUp8");
       if (rUp8.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 5000)
+        setNumB(counternumB + 5)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000)
+          setNumB(counternumB - 5)
         }
       }
     }
@@ -371,10 +373,10 @@ const NepoBasico = () => {
       const rUp9 = document.querySelector(".rUp9");
       if (rUp9.classList.item(4) === "flipdown-r3" && rUp7.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 5000)
+        setNumB(counternumB + 5)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5000)
+          setNumB(counternumB - 5)
         }
       }
     }
@@ -382,10 +384,10 @@ const NepoBasico = () => {
       const rUp8 = document.querySelector(".rUp8");
       if (rUp8.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 5000)
+        setNumB(counternumB + 5)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 5000)
+          setNumB(counternumB - 5)
       }
     }
     /*-- GRANOS VERDES SUPERIORES --*/
@@ -393,11 +395,11 @@ const NepoBasico = () => {
       const greenUp2 = document.querySelector(".greenUp2");
       if (greenUp2.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 500)
+        setNumA(counternumA + 500)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500)
+          setNumA(counternumA - 500)
         }
       }
     }
@@ -406,10 +408,10 @@ const NepoBasico = () => {
       const greenUp3 = document.querySelector(".greenUp3");
       if (greenUp3.classList.item(4) === "flipdown-r3" && greenUp1.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 500)
+        setNumA(counternumA + 500)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 500)
+          setNumA(counternumA - 500)
         }
       }
     }
@@ -417,21 +419,21 @@ const NepoBasico = () => {
       const greenUp2 = document.querySelector(".greenUp2");
       if (greenUp2.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 500)
+        setNumA(counternumA + 500)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 500)
+          setNumA(counternumA - 500)
       }
     }
     if (e.target.classList[3] === "greenUp4"){
       const greenUp5 = document.querySelector(".greenUp5");
       if (greenUp5.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 50)
+        setNumA(counternumA + 50)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50)
+          setNumA(counternumA - 50)
         }
       }
     }
@@ -440,10 +442,10 @@ const NepoBasico = () => {
       const greenUp6 = document.querySelector(".greenUp6");
       if (greenUp6.classList.item(4) === "flipdown-r3" && greenUp4.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 50)
+        setNumA(counternumA + 50)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 50)
+          setNumA(counternumA - 50)
         }
       }
     }
@@ -451,21 +453,21 @@ const NepoBasico = () => {
       const greenUp5 = document.querySelector(".greenUp5");
       if (greenUp5.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 50)
+        setNumA(counternumA + 50)
       }
       if (e.target.classList.length === 4){
-          setCounter(counter - 50)
+          setNumA(counternumA - 50)
       }
     }
     if (e.target.classList[3] === "greenUp7"){
       const greenUp8 = document.querySelector(".greenUp8");
       if (greenUp8.classList.item(4) === "flipdown-r2"){
         e.target.classList.toggle("flipdown-r1");
-        setCounter(counter + 5)
+        setNumA(counternumA + 5)
         console.log(e.target.classList)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5)
+          setNumA(counternumA - 5)
         }
       }
     }
@@ -474,10 +476,10 @@ const NepoBasico = () => {
       const greenUp9 = document.querySelector(".greenUp9");
       if (greenUp9.classList.item(4) === "flipdown-r3" && greenUp7.classList.length === 4){
         e.target.classList.toggle("flipdown-r2");
-        setCounter(counter + 5)
+        setNumA(counternumA + 5)
         
         if (e.target.classList.length === 4){
-          setCounter(counter - 5)
+          setNumA(counternumA - 5)
         }
       }
     }
@@ -485,10 +487,10 @@ const NepoBasico = () => {
       const greenUp8 = document.querySelector(".greenUp8");
       if (greenUp8.classList.length === 4){
         e.target.classList.toggle("flipdown-r3");
-        setCounter(counter + 5)
+        setNumA(counternumA + 5)
       }
       if (e.target.classList.length === 4){
-        setCounter(counter - 5)
+        setNumA(counternumA - 5)
       }
     }
     /*-- GRANOS GRISES INFERIORES --*/
@@ -496,10 +498,10 @@ const NepoBasico = () => {
       const gDown2 = document.querySelector(".gDown2");
       if (gDown2.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 10000000000000)
+        setCounter(counter + 10000000)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 10000000000000)
+        setCounter(counter - 10000000)
       }
     }
     if (e.target.classList[2] === "gDown2"){
@@ -507,10 +509,10 @@ const NepoBasico = () => {
       const gDown3 = document.querySelector(".gDown3");
       if (gDown3.classList.length === 3 && gDown1.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 10000000000000)
+        setCounter(counter + 10000000)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000000000)
+          setCounter(counter - 10000000)
         }
       }
     }
@@ -519,10 +521,10 @@ const NepoBasico = () => {
       const gDown4 = document.querySelector(".gDown4");
       if (gDown4.classList.length === 3 && gDown2.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 10000000000000)
+        setCounter(counter + 10000000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000000000)
+          setCounter(counter - 10000000)
         }
       }
     }
@@ -530,10 +532,10 @@ const NepoBasico = () => {
       const gDown3 = document.querySelector(".gDown3");
       if (gDown3.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 10000000000000)
+        setCounter(counter + 10000000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000000000)
+          setCounter(counter - 10000000)
         }
       }
     }
@@ -541,10 +543,10 @@ const NepoBasico = () => {
       const gDown6 = document.querySelector(".gDown6");
       if (gDown6.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 1000000000000)
+        setCounter(counter + 1000000)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 1000000000000)
+        setCounter(counter - 1000000)
       }
     }
     if (e.target.classList[2] === "gDown6"){
@@ -552,10 +554,10 @@ const NepoBasico = () => {
       const gDown7 = document.querySelector(".gDown7");
       if (gDown7.classList.length === 3 && gDown5.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 1000000000000)
+        setCounter(counter + 1000000)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000000000)
+          setCounter(counter - 1000000)
         }
       }
     }
@@ -564,10 +566,10 @@ const NepoBasico = () => {
       const gDown8 = document.querySelector(".gDown8");
       if (gDown8.classList.length === 3 && gDown6.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 1000000000000)
+        setCounter(counter + 1000000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000000000)
+          setCounter(counter - 1000000)
         }
       }
     }
@@ -575,10 +577,10 @@ const NepoBasico = () => {
       const gDown7 = document.querySelector(".gDown7");
       if (gDown7.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 1000000000000)
+        setCounter(counter + 1000000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000000000)
+          setCounter(counter - 1000000)
         }
       }
     }
@@ -587,10 +589,10 @@ const NepoBasico = () => {
       const yDown2 = document.querySelector(".yDown2");
       if (yDown2.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 100000000000)
+        setCounter(counter + 100000)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 100000000000)
+        setCounter(counter - 100000)
       }
     }
     if (e.target.classList[2] === "yDown2"){
@@ -598,10 +600,10 @@ const NepoBasico = () => {
       const yDown3 = document.querySelector(".yDown3");
       if (yDown3.classList.length === 3 && yDown1.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 100000000000)
+        setCounter(counter + 100000)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000000000)
+          setCounter(counter - 100000)
         }
       }
     }
@@ -610,10 +612,10 @@ const NepoBasico = () => {
       const yDown4 = document.querySelector(".yDown4");
       if (yDown4.classList.length === 3 && yDown2.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 100000000000)
+        setCounter(counter + 100000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000000000)
+          setCounter(counter - 100000)
         }
       }
     }
@@ -621,10 +623,10 @@ const NepoBasico = () => {
       const yDown3 = document.querySelector(".yDown3");
       if (yDown3.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 100000000000)
+        setCounter(counter + 100000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000000000)
+          setCounter(counter - 100000)
         }
       }
     }
@@ -632,10 +634,10 @@ const NepoBasico = () => {
       const yDown6 = document.querySelector(".yDown6");
       if (yDown6.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 10000000000)
+        setCounter(counter + 10000)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 10000000000)
+        setCounter(counter - 10000)
       }
     }
     if (e.target.classList[2] === "yDown6"){
@@ -643,10 +645,10 @@ const NepoBasico = () => {
       const yDown7 = document.querySelector(".yDown7");
       if (yDown7.classList.length === 3 && yDown5.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 10000000000)
+        setCounter(counter + 10000)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000000)
+          setCounter(counter - 10000)
         }
       }
     }
@@ -655,10 +657,10 @@ const NepoBasico = () => {
       const yDown8 = document.querySelector(".yDown8");
       if (yDown8.classList.length === 3 && yDown6.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 10000000000)
+        setCounter(counter + 10000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000000)
+          setCounter(counter - 10000)
         }
       }
     }
@@ -666,10 +668,10 @@ const NepoBasico = () => {
       const yDown7 = document.querySelector(".yDown7");
       if (yDown7.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 10000000000)
+        setCounter(counter + 10000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000000)
+          setCounter(counter - 10000)
         }
       }
     }
@@ -677,10 +679,10 @@ const NepoBasico = () => {
       const yDown10 = document.querySelector(".yDown10");
       if (yDown10.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 1000000000)
+        setCounter(counter + 1000)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 1000000000)
+        setCounter(counter - 1000)
       }
     }
     if (e.target.classList[2] === "yDown10"){
@@ -688,10 +690,10 @@ const NepoBasico = () => {
       const yDown11 = document.querySelector(".yDown11");
       if (yDown11.classList.length === 3 && yDown9.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 1000000000)
+        setCounter(counter + 1000)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000000)
+          setCounter(counter - 1000)
         }
       }
     }
@@ -700,10 +702,10 @@ const NepoBasico = () => {
       const yDown12 = document.querySelector(".yDown12");
       if (yDown12.classList.length === 3 && yDown10.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 1000000000)
+        setCounter(counter + 1000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000000)
+          setCounter(counter - 1000)
         }
       }
     }
@@ -711,10 +713,10 @@ const NepoBasico = () => {
       const yDown11 = document.querySelector(".yDown11");
       if (yDown11.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 1000000000)
+        setCounter(counter + 1000)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000000)
+          setCounter(counter - 1000)
         }
       }
     }
@@ -723,10 +725,10 @@ const NepoBasico = () => {
       const bDown2 = document.querySelector(".bDown2");
       if (bDown2.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 100000000)
+        setCounter(counter + 100)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 100000000)
+        setCounter(counter - 100)
       }
     }
     if (e.target.classList[2] === "bDown2"){
@@ -734,10 +736,10 @@ const NepoBasico = () => {
       const bDown3 = document.querySelector(".bDown3");
       if (bDown3.classList.length === 3 && bDown1.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 100000000)
+        setCounter(counter + 100)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000000)
+          setCounter(counter - 100)
         }
       }
     }
@@ -746,10 +748,10 @@ const NepoBasico = () => {
       const bDown4 = document.querySelector(".bDown4");
       if (bDown4.classList.length === 3 && bDown2.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 100000000)
+        setCounter(counter + 100)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000000)
+          setCounter(counter - 100)
         }
       }
     }
@@ -757,10 +759,10 @@ const NepoBasico = () => {
       const bDown3 = document.querySelector(".bDown3");
       if (bDown3.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 100000000)
+        setCounter(counter + 100)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000000)
+          setCounter(counter - 100)
         }
       }
     }
@@ -768,10 +770,10 @@ const NepoBasico = () => {
       const bDown6 = document.querySelector(".bDown6");
       if (bDown6.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 10000000)
+        setCounter(counter + 10)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 10000000)
+        setCounter(counter - 10)
       }
     }
     if (e.target.classList[2] === "bDown6"){
@@ -779,10 +781,10 @@ const NepoBasico = () => {
       const bDown7 = document.querySelector(".bDown7");
       if (bDown7.classList.length === 3 && bDown5.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 10000000)
+        setCounter(counter + 10)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000)
+          setCounter(counter - 10)
         }
       }
     }
@@ -791,10 +793,10 @@ const NepoBasico = () => {
       const bDown8 = document.querySelector(".bDown8");
       if (bDown8.classList.length === 3 && bDown6.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 10000000)
+        setCounter(counter + 10)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000)
+          setCounter(counter - 10)
         }
       }
     }
@@ -802,10 +804,10 @@ const NepoBasico = () => {
       const bDown7 = document.querySelector(".bDown7");
       if (bDown7.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 10000000)
+        setCounter(counter + 10)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000000)
+          setCounter(counter - 10)
         }
       }
     }
@@ -813,10 +815,10 @@ const NepoBasico = () => {
       const bDown10 = document.querySelector(".bDown10");
       if (bDown10.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 1000000)
+        setCounter(counter + 1)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 1000000)
+        setCounter(counter - 1)
       }
     }
     if (e.target.classList[2] === "bDown10"){
@@ -824,10 +826,10 @@ const NepoBasico = () => {
       const bDown11 = document.querySelector(".bDown11");
       if (bDown11.classList.length === 3 && bDown9.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 1000000)
+        setCounter(counter + 1)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000)
+          setCounter(counter - 1)
         }
       }
     }
@@ -836,10 +838,10 @@ const NepoBasico = () => {
       const bDown12 = document.querySelector(".bDown12");
       if (bDown12.classList.length === 3 && bDown10.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 1000000)
+        setCounter(counter + 1)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000)
+          setCounter(counter - 1)
         }
       }
     }
@@ -847,10 +849,10 @@ const NepoBasico = () => {
       const bDown11 = document.querySelector(".bDown11");
       if (bDown11.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 1000000)
+        setCounter(counter + 1)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000000)
+          setCounter(counter - 1)
         }
       }
     }
@@ -859,10 +861,10 @@ const NepoBasico = () => {
       const rDown2 = document.querySelector(".rDown2");
       if (rDown2.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 100000)
+        setNumB(counternumB + 100)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 100000)
+        setNumB(counternumB - 100)
       }
     }
     if (e.target.classList[2] === "rDown2"){
@@ -870,10 +872,10 @@ const NepoBasico = () => {
       const rDown3 = document.querySelector(".rDown3");
       if (rDown3.classList.length === 3 && rDown1.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 100000)
+        setNumB(counternumB + 100)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000)
+          setNumB(counternumB - 100)
         }
       }
     }
@@ -882,10 +884,10 @@ const NepoBasico = () => {
       const rDown4 = document.querySelector(".rDown4");
       if (rDown4.classList.length === 3 && rDown2.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 100000)
+        setNumB(counternumB + 100)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000)
+          setNumB(counternumB - 100)
         }
       }
     }
@@ -893,10 +895,10 @@ const NepoBasico = () => {
       const rDown3 = document.querySelector(".rDown3");
       if (rDown3.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 100000)
+        setNumB(counternumB + 100)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100000)
+          setNumB(counternumB - 100)
         }
       }
     }
@@ -904,10 +906,10 @@ const NepoBasico = () => {
       const rDown6 = document.querySelector(".rDown6");
       if (rDown6.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 10000)
+        setNumB(counternumB + 10)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 10000)
+        setNumB(counternumB - 10)
       }
     }
     if (e.target.classList[2] === "rDown6"){
@@ -915,10 +917,10 @@ const NepoBasico = () => {
       const rDown7 = document.querySelector(".rDown7");
       if (rDown7.classList.length === 3 && rDown5.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 10000)
+        setNumB(counternumB + 10)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000)
+          setNumB(counternumB - 10)
         }
       }
     }
@@ -927,10 +929,10 @@ const NepoBasico = () => {
       const rDown8 = document.querySelector(".rDown8");
       if (rDown8.classList.length === 3 && rDown6.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 10000)
+        setNumB(counternumB + 10)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000)
+          setNumB(counternumB - 10)
         }
       }
     }
@@ -938,10 +940,10 @@ const NepoBasico = () => {
       const rDown7 = document.querySelector(".rDown7");
       if (rDown7.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 10000)
+        setNumB(counternumB + 10)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10000)
+          setNumB(counternumB - 10)
         }
       }
     }
@@ -949,10 +951,10 @@ const NepoBasico = () => {
       const rDown10 = document.querySelector(".rDown10");
       if (rDown10.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 1000)
+        setNumB(counternumB + 1)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 1000)
+        setNumB(counternumB - 1)
       }
     }
     if (e.target.classList[2] === "rDown10"){
@@ -960,10 +962,10 @@ const NepoBasico = () => {
       const rDown11 = document.querySelector(".rDown11");
       if (rDown11.classList.length === 3 && rDown9.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 1000)
+        setNumB(counternumB + 1)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000)
+          setNumB(counternumB - 1)
         }
       }
     }
@@ -972,10 +974,10 @@ const NepoBasico = () => {
       const rDown12 = document.querySelector(".rDown12");
       if (rDown12.classList.length === 3 && rDown10.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 1000)
+        setNumB(counternumB + 1)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000)
+          setNumB(counternumB - 1)
         }
       }
     }
@@ -983,21 +985,22 @@ const NepoBasico = () => {
       const rDown11 = document.querySelector(".rDown11");
       if (rDown11.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 1000)
+        setNumB(counternumB + 1)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1000)
+          setNumB(counternumB - 1)
         }
       }
     }
+    /*-- GRANOS VERDES INFERIORES --*/
     if (e.target.classList[2] === "greenDown1"){
       const greenDown2 = document.querySelector(".greenDown2");
       if (greenDown2.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 100)
+        setNumA(counternumA + 100)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 100)
+        setNumA(counternumA - 100)
       }
     }
     if (e.target.classList[2] === "greenDown2"){
@@ -1005,10 +1008,10 @@ const NepoBasico = () => {
       const greenDown3 = document.querySelector(".greenDown3");
       if (greenDown3.classList.length === 3 && greenDown1.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 100)
+        setNumA(counternumA + 100)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 100)
+          setNumA(counternumA - 100)
         }
       }
     }
@@ -1017,10 +1020,10 @@ const NepoBasico = () => {
       const greenDown4 = document.querySelector(".greenDown4");
       if (greenDown4.classList.length === 3 && greenDown2.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 100)
+        setNumA(counternumA + 100)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100)
+          setNumA(counternumA - 100)
         }
       }
     }
@@ -1028,10 +1031,10 @@ const NepoBasico = () => {
       const greenDown3 = document.querySelector(".greenDown3");
       if (greenDown3.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 100)
+        setNumA(counternumA + 100)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 100)
+          setNumA(counternumA - 100)
         }
       }
     }
@@ -1039,10 +1042,10 @@ const NepoBasico = () => {
       const greenDown6 = document.querySelector(".greenDown6");
       if (greenDown6.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 10)
+        setNumA(counternumA + 10)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 10)
+        setNumA(counternumA - 10)
       }
     }
     if (e.target.classList[2] === "greenDown6"){
@@ -1050,10 +1053,10 @@ const NepoBasico = () => {
       const greenDown7 = document.querySelector(".greenDown7");
       if (greenDown7.classList.length === 3 && greenDown5.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 10)
+        setNumA(counternumA + 10)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 10)
+          setNumA(counternumA - 10)
         }
       }
     }
@@ -1062,10 +1065,10 @@ const NepoBasico = () => {
       const greenDown8 = document.querySelector(".greenDown8");
       if (greenDown8.classList.length === 3 && greenDown6.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 10)
+        setNumA(counternumA + 10)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10)
+          setNumA(counternumA - 10)
         }
       }
     }
@@ -1073,10 +1076,10 @@ const NepoBasico = () => {
       const greenDown7 = document.querySelector(".greenDown7");
       if (greenDown7.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 10)
+        setNumA(counternumA + 10)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 10)
+          setNumA(counternumA - 10)
         }
       }
     }
@@ -1084,10 +1087,10 @@ const NepoBasico = () => {
       const greenDown10 = document.querySelector(".greenDown10");
       if (greenDown10.classList.length === 3){
         e.target.classList.toggle("flipup-r1")
-        setCounter(counter + 1)
+        setNumA(counternumA + 1)
       }
       if (e.target.classList.length === 3){
-        setCounter(counter - 1)
+        setNumA(counternumA - 1)
       }
     }
     if (e.target.classList[2] === "greenDown10"){
@@ -1095,10 +1098,10 @@ const NepoBasico = () => {
       const greenDown11 = document.querySelector(".greenDown11");
       if (greenDown11.classList.length === 3 && greenDown9.classList.item(3) === "flipup-r1"){
         e.target.classList.toggle("flipup-r2")
-        setCounter(counter + 1)
+        setNumA(counternumA + 1)
         
         if (e.target.classList.length === 3){
-          setCounter(counter - 1)
+          setNumA(counternumA - 1)
         }
       }
     }
@@ -1107,10 +1110,10 @@ const NepoBasico = () => {
       const greenDown12 = document.querySelector(".greenDown12");
       if (greenDown12.classList.length === 3 && greenDown10.classList.item(3) === "flipup-r2"){
         e.target.classList.toggle("flipup-r3")
-        setCounter(counter + 1)
+        setNumA(counternumA + 1)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1)
+          setNumA(counternumA - 1)
         }
       }
     }
@@ -1118,16 +1121,17 @@ const NepoBasico = () => {
       const greenDown11 = document.querySelector(".greenDown11");
       if (greenDown11.classList.item(3) === "flipup-r3"){
         e.target.classList.toggle("flipup-r4")
-        setCounter(counter + 1)
+        setNumA(counternumA + 1)
 
         if (e.target.classList.length === 3){
-          setCounter(counter - 1)
+          setNumA(counternumA - 1)
         }
       }
     }
   }
 
   return (
+    
     <>
     {toMenu === false ? 
     <>
@@ -1137,7 +1141,7 @@ const NepoBasico = () => {
             <img src={src} className='mascota-logo' alt='nepohualtzintztzin'></img>
             <h3 className='title'>Nepohualtzintzin</h3>
           </div>
-      
+    
           <nav>
             <ul>
               <li>
@@ -1148,10 +1152,11 @@ const NepoBasico = () => {
               </li>
             </ul>
           </nav>
-        </div>     
+        </div>
       </header>
+    
+      <div className='nepo-multiplicacion'>
       
-      <div className='nepo'>
         <div className='quadrant-1'>
           <div className='column-1'>
             
@@ -1246,8 +1251,20 @@ const NepoBasico = () => {
           </div>
         </div>
         
-        <div className='pantalla-basico'>
-          {counter}
+        <div className='pantalla'>
+          
+          <div className='pantalla-resultado'>
+            <div className='titulo-factor'>Hoja de resultado</div>
+            <div className='contador-num'>{counter}</div>
+          </div>
+          <div className='pantalla-numB'>
+            <div className='titulo-factor'>Numero B</div>
+            <div className='contador-num'>{counternumB}</div>
+          </div>
+          <div className='pantalla-numA'>
+            <div className='titulo-factor'>Numero A</div>
+            <div className='contador-num'>{counternumA}</div>
+          </div>
         </div>
         
         <div className='quadrant-3 bottom'>
@@ -1355,4 +1372,4 @@ const NepoBasico = () => {
     </>
   );
 };
-export default NepoBasico;
+export default NepoMult;

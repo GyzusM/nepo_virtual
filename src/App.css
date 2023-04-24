@@ -19,7 +19,6 @@
 }
 
 header {
-  /*background-color: #CCE8D5;*/
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -38,8 +37,13 @@ header {
 }
 
 .logo{
+  border: none;
   display: flex;
   align-items: center;
+}
+
+.mascota-logo{
+  cursor: pointer;
 }
 
 .title{
@@ -48,6 +52,19 @@ header {
   margin: 0 20px;
   text-align: center;
   color: #000;
+  cursor: pointer;
+}
+
+.title:hover{
+  color: rgb(248, 172, 29);
+}
+
+a > h4{
+  color: #fff;
+}
+
+a > h3:hover{
+  color: rgb(248, 172, 29);
 }
 
 a {
@@ -127,8 +144,9 @@ video {
 }
 
 .btn-bienvenida:hover{
-  width: 370px;
-  height: 120px;
+  transition: .3s;
+  width: 360px;
+  height: 110px;
   box-shadow: rgb(215, 141, 5) 10px 10px;
 }
 
@@ -156,20 +174,96 @@ video {
   flex-flow: row wrap;
 }
 
-.pantalla {
+.nepo-multiplicacion {
+  background: url(./assets/img/nepo_multiplicacion.svg);
+  background-repeat: no-repeat;
+  margin: 150px auto;
   width: 1154px;
-  height: 30px;
+  height: 590px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.titulo-factor{
+  background-color: rgb(215, 141, 5);
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contador-num{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pantalla-basico{
+  width: 1154px;
+  height: 50px;
   font-size: 25px;
   color: #fff;
   font-weight: 600;
   position: relative;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin-top: -25px;
+  margin-top: -45px;
   z-index: 5;
 }
 
+.pantalla {
+  width: 1154px;
+  height: 50px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -45px;
+  z-index: 5;
+}
+
+.pantalla-resultado {
+  width: 678px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+}
+
+.pantalla-numA {
+  width: 238px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+}
+
+.pantalla-numB {
+  width: 238px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+}
 
 /*-- CUADRANTES
     quadrant-1 = 2 columnas & 3 filas
