@@ -1246,6 +1246,8 @@ const NepoAvanzado = () => {
           </div>
         </div>
         
+        <div className='pantalla'></div>
+
         <div className='quadrant-3 bottom'>
 
           <div className='column-1'>
