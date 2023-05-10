@@ -1128,7 +1128,7 @@ const NepoAvanzado = () => {
   }
 
   return (
-    <>
+    <div className='todo'>
     {toMenu === false ?
     <>
       <header>
@@ -1350,7 +1350,7 @@ const NepoAvanzado = () => {
       </div>
     </>
     : <MenuBienvenida/>}
-    </>
+    </div>
   );
 };
 export default NepoAvanzado;
