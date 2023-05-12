@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Principal.module.css';
 import logoNepo from '../assets/img/logo_nepo.png'
+import yo from '../assets/img/verdeArriba.svg'
+import MenuBienvenida from './MenuBienvenida';
 const Principal = () => {
+  const [showMain, hideMain] = useState(false);
   return ( 
     <>
+    {showMain === false ?
+      <>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
       <header className={styles.encabezado}>
@@ -38,7 +43,7 @@ const Principal = () => {
           </nav>
         </div>
       </header>
-      <div className={styles.inicio}>
+      <section className={styles.inicio}>
         <div className={styles.contentInicio}>
           <p className={styles.bienvenida}>BIENVENIDOS</p>
           <h1>Nepohualtzintzin</h1>
@@ -47,10 +52,11 @@ const Principal = () => {
           El significado de la palabra nepohualtzintzin entonces es «la persona que tiene el conocimiento de la cuenta de la 
           simplicidad para trascender».
           </p>
-          <a href='#'>Ir a Nepohualtzintzin</a>
+          <button onClick={() => hideMain(true)}>Ir a Nepohualtzintzin</button>
         </div>
-      </div>
-      <div className={styles.acercade}>
+      </section>
+
+      <section className={styles.acercade}>
         <div className={styles.contentAcercade}>
           <h2>ACERCA DE</h2>
           <h3>NEPOHUALTZINTZIN</h3>
@@ -69,9 +75,9 @@ const Principal = () => {
             <p> Cortometraje "México: El ombligo de la luna" por Gabriel Retes. Extraído de: https://youtu.be/hAguW0j1pbE</p> 
           </div>
         </div>
-        
-      </div>
-      <div className={styles.comoseusa}>
+      </section>
+
+      <section className={styles.comoseusa}>
         <div className={styles.row1}>
           <h1>¿CÓMO SE USA?</h1>
           <p>En está galería de videos se encuentra toda la ayuda que necesitas para aprender a sumar, restar, multiplicar y dividir con el Nepohualtzintzin.</p>
@@ -116,7 +122,94 @@ const Principal = () => {
             <iframe width="460" height="215" src="https://www.youtube.com/embed/bdSOYGOytvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className={styles.beneficios}>
+        <h3 class={styles.titleBeneficios}>BENEFICIOS</h3>
+        <div className={styles.rowBeneficios}>
+          <div className={styles.boxBeneficio}>
+            <h4>Razonamiento lógico-matemático</h4>
+            <hr/>
+              <ul class="servicios-tag"></ul>   
+              <p>Es la capacidad que se tiene, o no, de mirar los números, entenderlos y saber cómo poder hacer operaciones con ellos.</p>
+          </div>
+          <div className={styles.boxBeneficio}>
+            <h4>Habilidades del pensamiento</h4>
+            <hr/>
+            <ul class="servicios-tag"></ul>
+            <p>Es la capacidad y disposición para el desarrollo de procesos mentales, que contribuyan a la resolución de problemas de la cotidianidad.</p>
+          </div>
+          <div className={styles.boxBeneficio}>
+            <h4>Coordinación oculo-manual</h4>
+            <hr/>
+            <ul class="servicios-tag"></ul>
+            <p>Es la capacidad de coordinar el movimiento de las manos con la información visual.</p>
+          </div>
+        </div>
+        <div className={styles.rowBeneficios}>
+          <div className={styles.boxBeneficio}>
+            <h4>Coordinación motriz-fina</h4>
+            <hr/>
+            <ul class="servicios-tag"></ul>
+            <p>Es la coordinación de músculos, huesos y nervios para producir movimientos pequeños y precisos. </p>
+          </div>
+          <div className={styles.boxBeneficio}>
+            <h4>Resolución de problemas</h4>
+            <hr/>
+            <ul class="servicios-tag"></ul>
+            <p>La capacidad para identificar un problema, tomar medidas lógicas para encontrar una solución deseada, y supervisar y evaluar la implementación de tal solución.</p>
+          </div>
+          <div className={styles.boxBeneficio}>
+            <h4>Memoria</h4>
+            <hr/>
+            <ul class="servicios-tag"></ul>
+            <p>La memoria es la capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias (ideas, imágenes, acontecimientos, sentimientos, etc. ).</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.nosotros}>
+        <h1>Nosotros</h1>
+        <div className={styles.rowTeam}>
+          <div className={styles.member}>
+            <img src={yo} alt=""/>
+            <h2>Jesús Morán</h2>
+            <p>Programador</p>
+          </div>
+          <div className={styles.member}>
+            <img src={yo} alt=""/>
+            <h2>Paola Estefanía</h2>
+            <p>Diseñador web</p>
+          </div>
+          <div className={styles.member}>
+            <img src={yo} alt=""/>
+            <h2>Dr. Gaspar García</h2>
+            <p>Asesor de proyecto</p>
+          </div>
+        </div>
+      </section>
+      
+      <section className={styles.contacto}>
+        <h3>Contáctanos ahora</h3>
+        <div className={styles.contentForm}>
+          <form action="https://formsubmit.co/nepohualtzintzin91@gmail.com" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <div className={styles.rowForm1}>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre completo" data-rule="minlen:4" data-msg="Introduce al menos 4 caracteres."/>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico" data-rule="email" data-msg="Ingresa un correo valido."/>
+            </div>
+            <div className={styles.rowForm2}>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Número de telefono" data-rule="minlen:4" data-msg="Introduce al menos 4 caracteres,"/>
+            </div>
+            <div className={styles.rowForm2}>
+              <input type="text" class="form-control" name="message" id="mesagge" placeholder="Mensaje..." data-rule="minlen:4" data-msg="Escribe un mensaje, recomendación o duda."/>
+            </div>
+          </form>
+          <button className={styles.btnEnviar} type="submit">Enviar</button>
+        </div>
+      </section>
+      </>
+    : <MenuBienvenida/>
+    }
     </>
   );
 }

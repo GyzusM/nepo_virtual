@@ -1132,7 +1132,7 @@ const NepoMult = () => {
 
   return (
     
-    <>
+    <div className='main-nepo'>
     {toMenu === false ? 
     <>
       <header>
@@ -1369,7 +1369,7 @@ const NepoMult = () => {
       </div>
     </>
     : <MenuBienvenida/>}
-    </>
+    </div>
   );
 };
 export default NepoMult;

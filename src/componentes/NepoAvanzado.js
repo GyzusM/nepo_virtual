@@ -1128,7 +1128,7 @@ const NepoAvanzado = () => {
   }
 
   return (
-    <div className='todo'>
+    <div className='main-nepo'>
     {toMenu === false ?
     <>
       <header>

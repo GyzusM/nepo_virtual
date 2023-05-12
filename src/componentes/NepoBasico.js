@@ -1128,7 +1128,7 @@ const NepoBasico = () => {
   }
 
   return (
-    <>
+    <div className='main-nepo'>
     {toMenu === false ? 
     <>
       <header>
@@ -1352,7 +1352,7 @@ const NepoBasico = () => {
       </div>
     </>
     : <MenuBienvenida/>}
-    </>
+    </div>
   );
 };
 export default NepoBasico;
