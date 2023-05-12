@@ -37,7 +37,7 @@ const Principal = () => {
                 <a href='#' className={styles.link}>CONTACTO</a>
               </li>
               <li className={styles.row}>
-                <a href='#' className={styles.link}>EDUNEPO</a>
+                <a href='https://nepohual-tzintzin.com.mx/moodle/' className={styles.link}>EDUNEPO</a>
               </li>
             </ul>
           </nav>
