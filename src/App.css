@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
 
 .main-nepo {
@@ -178,7 +179,7 @@ video {
 }
 
 .nepo-multiplicacion {
-  background: url(./assets/img/nepo_multiplicacion.svg);
+  background: url('./assets/img/nepo_multiplicacion.svg');
   background-repeat: no-repeat;
   margin: 150px auto;
   width: 1154px;
@@ -339,4 +340,116 @@ video {
   display: flex;
   height: 100%;
   width: 100%;
+}
+
+/*--- MENU PRINCIPAL --*/
+.encabezado {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.contentHeader {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoNepo {
+  background: url('./assets/img/logo_nepo.png');
+  width: 22%;
+  height: 22%;
+  background-repeat: no-repeat;
+}
+
+.column {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  margin: 0 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.menu .column .row .link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: .5s;
+  font-size: 13px;
+}
+
+.menu .column .row .link:hover {
+  color: rgb(215, 141, 5);
+}
+
+.navToggle {
+  display: none;
+}
+
+@media (max-width: 819px) {
+
+  .encabezado .contentHeader .logoNepo {
+    width: 30%;
+    height: 30%;
+  }
+  .column {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .menu .column .row  {
+    margin: 15px 0;
+    
+  }
+
+  .column.open {
+    transform: translateX(0) !important;
+  }
+
+  .navToggle {
+    display: flex !important;
+    flex-direction: column;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  
+  .navToggle span {
+    width: 30px;
+    height: 4px;
+    background: #000;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .navToggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .navToggle.open > span:nth-child(2) {
+    display: none;
+  }
+
+  .navToggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
 }

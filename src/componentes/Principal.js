@@ -1,46 +1,56 @@
 import React, {useState} from 'react';
 import styles from './Principal.module.css';
+import '../App.css';
 import logoNepo from '../assets/img/logo_nepo.png'
 import yo from '../assets/img/verdeArriba.svg'
 import MenuBienvenida from './MenuBienvenida';
 const Principal = () => {
-  const [showMain, hideMain] = useState(false);
+  const [showMain, hideMain] =useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   return ( 
     <>
     {showMain === false ?
       <>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     
-      <header className={styles.encabezado}>
-        <div className={styles.contentHeader}>
+      <header className="encabezado">
+        <div className="contentHeader">
           
-          <img src={logoNepo} className={styles.logoNepo}></img>
+          <img src={logoNepo} className="logoNepo"></img>
           
-          <nav className={styles.menu}>
-            <ul className={styles.column}>
-              <li className={styles.row}>
-                <a href='#' className={styles.link}>INICIO</a>
+          <nav className="menu">
+            <ul className={`column ${isOpen && "open"}`}>
+              <li className="row">
+                <a href='#' className="link">INICIO</a>
               </li>
-              <li className={styles.row}>
-                <a href='#' className={styles.link}>ACERCA DE</a>
+              <li className="row">
+                <a href='#' className="link">ACERCA DE</a>
               </li>
-              <li className={styles.row}>
-                <a href='#' className={styles.link}>COMO SE USA</a>
+              <li className="row">
+                <a href='#' className="link">COMO SE USA</a>
               </li>
-              <li className={styles.row}>
-                <a href='#' className={styles.link}>BENEFICIOS</a>
+              <li className="row">
+                <a href='#' className="link">BENEFICIOS</a>
               </li>
-              <li className={styles.row}>
-                <a href='#' className={styles.link}>NOSOTROS</a>
+              <li className="row">
+                <a href='#' className="link">NOSOTROS</a>
               </li>
-              <li className={styles.row}>
-                <a href='#' className={styles.link}>CONTACTO</a>
+              <li className="row">
+                <a href='#' className="link">CONTACTO</a>
               </li>
-              <li className={styles.row}>
-                <a href='https://nepohual-tzintzin.com.mx/moodle/' className={styles.link}>EDUNEPO</a>
+              <li className="row">
+                <a href='https://nepohual-tzintzin.com.mx/moodle/' className="link">EDUNEPO</a>
               </li>
             </ul>
+
+            <div className={`navToggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </nav>
+          
         </div>
       </header>
       <section className={styles.inicio}>
@@ -102,7 +112,7 @@ const Principal = () => {
             <iframe width="460" height="215" src="https://www.youtube.com/embed/5jMJlDltaJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
-        <div className={styles.row4}>
+        <div className={styles.row2}>
           <div className={styles.title}>
             <h4><i class="fa-solid fa-xmark"></i> Multiplicación</h4>
           </div>
