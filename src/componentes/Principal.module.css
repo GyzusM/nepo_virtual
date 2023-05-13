@@ -412,6 +412,10 @@
       font-size: 25px;
     }
 
+    .acercade .contentAcercade h4{
+      text-align: center;
+    }
+
     .acercade .contentAcercade p {
       text-align: center;
     }
@@ -443,4 +447,9 @@
   .acercade .contentAcercade .containerVideo p {
     display: none;
   }
+
+  .acercade .contentAcercade {
+    margin: 0 20px;
+  }
+
 }
