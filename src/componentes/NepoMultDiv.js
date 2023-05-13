@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Grano from './elements/Grano';
 import './elements/grano.css';
-import src from '../assets/img/mascotaMini.svg';
+import src from '../assets/img/mascotaMini.png';
 import MenuBienvenida from './MenuBienvenida';
 
 const NepoMult = () => {
@@ -1138,7 +1138,7 @@ const NepoMult = () => {
       <header>
         <div className='content-header'>
           <div className='logo' onClick={() => setToMenu(true)}>
-            <img src={src} className='mascota-logo' alt='nepohualtzintztzin'></img>
+            <img src={src} className='mascota-logo' alt='Mascota de Nepohualtzintzin digital'></img>
             <h3 className='title'>Nepohualtzintzin</h3>
           </div>
     

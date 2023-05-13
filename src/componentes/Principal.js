@@ -17,7 +17,7 @@ const Principal = () => {
       <header className="encabezado">
         <div className="contentHeader">
           
-          <img src={logoNepo} className="logoNepo"></img>
+          <img src={logoNepo} className="logoNepo" alt="Logo Nepo App"></img>
           
           <nav className="menu">
             <ul className={`column ${isOpen && "open"}`}>
@@ -79,7 +79,7 @@ const Principal = () => {
           </p>
           <div className={styles.containerVideo}>
             <iframe 
-              src="https://www.youtube.com/embed/hAguW0j1pbE?autoplay=1&muted=1" title="México: El ombligo de la Luna | cortometraje completo | Gabriel Retes" 
+              src="https://www.youtube.com/embed/hAguW0j1pbE?autoplay=1&muted=1" loading="lazy" title="México: El ombligo de la Luna | cortometraje completo | Gabriel Retes" 
               frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
             <p> Cortometraje "México: El ombligo de la luna" por Gabriel Retes. Extraído de: https://youtu.be/hAguW0j1pbE</p> 
@@ -94,65 +94,65 @@ const Principal = () => {
         </div>
         <div className={styles.row2}>
           <div className={styles.title}>
-            <h4><i class="fa-solid fa-plus"></i> Suma</h4>
+            <h4><i className="fa-solid fa-plus"></i> Suma</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/2aijAaT-jXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/gqZFPyQUmB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/N4GJxXh0PNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/2aijAaT-jXo" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/gqZFPyQUmB0" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/N4GJxXh0PNc" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
         <div className={styles.row3}>
           <div className={styles.title}>
-            <h4><i class="fa-solid fa-minus"></i> Resta</h4>
+            <h4><i className="fa-solid fa-minus"></i> Resta</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/3937ufmAYNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/tWcTX4xKPqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/5jMJlDltaJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/3937ufmAYNY" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/tWcTX4xKPqk" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/5jMJlDltaJA" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
         <div className={styles.row2}>
           <div className={styles.title}>
-            <h4><i class="fa-solid fa-xmark"></i> Multiplicación</h4>
+            <h4><i className="fa-solid fa-xmark"></i> Multiplicación</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/zoHjhHa5tXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/2CINBskt2sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/KGmOyZz3FXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/zoHjhHa5tXY" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/2CINBskt2sI" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/KGmOyZz3FXY" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
         <div className={styles.row3}>
           <div className={styles.title}>
-            <h4><i class="fa-solid fa-divide"></i> División</h4>
+            <h4><i className="fa-solid fa-divide"></i> División</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/26tL8CpbDek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/LJf0wJG5JV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="460" height="215" src="https://www.youtube.com/embed/bdSOYGOytvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/26tL8CpbDek" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/LJf0wJG5JV8" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/bdSOYGOytvU" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </section>
 
       <section className={styles.beneficios}>
-        <h3 class={styles.titleBeneficios}>BENEFICIOS</h3>
+        <h3 className={styles.titleBeneficios}>BENEFICIOS</h3>
         <div className={styles.rowBeneficios}>
           <div className={styles.boxBeneficio}>
             <h4>Razonamiento lógico-matemático</h4>
             <hr/>
-              <ul class="servicios-tag"></ul>   
+              <ul clasName="servicios-tag"></ul>   
               <p>Es la capacidad que se tiene, o no, de mirar los números, entenderlos y saber cómo poder hacer operaciones con ellos.</p>
           </div>
           <div className={styles.boxBeneficio}>
             <h4>Habilidades del pensamiento</h4>
             <hr/>
-            <ul class="servicios-tag"></ul>
+            <ul className="servicios-tag"></ul>
             <p>Es la capacidad y disposición para el desarrollo de procesos mentales, que contribuyan a la resolución de problemas de la cotidianidad.</p>
           </div>
           <div className={styles.boxBeneficio}>
             <h4>Coordinación oculo-manual</h4>
             <hr/>
-            <ul class="servicios-tag"></ul>
+            <ul className="servicios-tag"></ul>
             <p>Es la capacidad de coordinar el movimiento de las manos con la información visual.</p>
           </div>
         </div>
@@ -160,19 +160,19 @@ const Principal = () => {
           <div className={styles.boxBeneficio}>
             <h4>Coordinación motriz-fina</h4>
             <hr/>
-            <ul class="servicios-tag"></ul>
+            <ul className="servicios-tag"></ul>
             <p>Es la coordinación de músculos, huesos y nervios para producir movimientos pequeños y precisos. </p>
           </div>
           <div className={styles.boxBeneficio}>
             <h4>Resolución de problemas</h4>
             <hr/>
-            <ul class="servicios-tag"></ul>
+            <ul className="servicios-tag"></ul>
             <p>La capacidad para identificar un problema, tomar medidas lógicas para encontrar una solución deseada, y supervisar y evaluar la implementación de tal solución.</p>
           </div>
           <div className={styles.boxBeneficio}>
             <h4>Memoria</h4>
             <hr/>
-            <ul class="servicios-tag"></ul>
+            <ul className="servicios-tag"></ul>
             <p>La memoria es la capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias (ideas, imágenes, acontecimientos, sentimientos, etc. ).</p>
           </div>
         </div>
@@ -182,17 +182,17 @@ const Principal = () => {
         <h1>Nosotros</h1>
         <div className={styles.rowTeam}>
           <div className={styles.member}>
-            <img src={yo} alt=""/>
+            <img src={yo} alt="Programador de Nepo App para la Web"/>
             <h2>Jesús Morán</h2>
             <p>Programador</p>
           </div>
           <div className={styles.member}>
-            <img src={yo} alt=""/>
+            <img src={yo} alt="Diseñadora para la web Nepohualtzintzin"/>
             <h2>Paola Estefanía</h2>
             <p>Diseñador web</p>
           </div>
           <div className={styles.member}>
-            <img src={yo} alt=""/>
+            <img src={yo} alt="Asesor de Proyecto para la Web y Nepohualtzintzin Digital"/>
             <h2>Dr. Gaspar García</h2>
             <p>Asesor de proyecto</p>
           </div>

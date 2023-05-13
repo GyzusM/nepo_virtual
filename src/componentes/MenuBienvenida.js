@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
-import NepoBasico from './NepoBasico';
-import NepoAvanzado from './NepoAvanzado';
-import NepoMultDiv from './NepoMultDiv';
-import videoBg from '../assets/nepohualli.mp4'
+import videoBg from '../assets/nepohualli.mp4';
+import { Suspense, lazy } from 'react';
+const NepoBasico = lazy(() => import("./NepoBasico")) ;
+const NepoAvanzado = lazy(() => import ("./NepoAvanzado")) ;
+const NepoMultDiv  = lazy(() => import ("./NepoMultDiv"));
+
 
 
 const MenuBienvenida = () => {
@@ -12,7 +14,7 @@ const MenuBienvenida = () => {
   const [sesion2, abrirNepoAvanzado] = useState(false);
   const [sesion3, abrirNepoMult] = useState(false);
   return (
-    <>
+    <Suspense fallback="Cargando Nepohualtzintzin Digital">
       {showMenu === false ?
         
         <div className='main'>
@@ -34,7 +36,7 @@ const MenuBienvenida = () => {
       {sesion === false ? '' : <NepoBasico/>}
       {sesion2 === false ? '' : <NepoAvanzado/>}
       {sesion3 === false ? '' : <NepoMultDiv/>}
-    </>
+    </Suspense>
   );
 };
-export default MenuBienvenida
+export default MenuBienvenida;

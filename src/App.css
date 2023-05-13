@@ -461,6 +461,36 @@ video {
 }
 
 @media (max-width: 420px) {
+  .btn-bienvenida{
+    transition: .4s;
+    width: 350px;
+    height: 80px;
+    margin: 30px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: orange;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgb(215, 141, 5) 5px 5px;
+  }
+  
+  .btn-bienvenida:hover{
+    transition: .4s;
+    width: 360px;
+    height: 110px;
+    box-shadow: rgb(215, 141, 5) 10px 10px;
+  }
+  
+  /*-- Titulo Bienvenida --*/
+  .titulo-bienvenida{
+    color:#fff;
+    margin-bottom: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+  }
+  
   .column {
     top: 40px;
   }
@@ -472,5 +502,109 @@ video {
 
   .encabezado .contentHeader .row .link {
     font-size: 18px;
+  }
+
+  .btn-bienvenida {
+    padding: 5px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 916px) and (orientation: portrait ) {
+  .main-nepo {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 916px) and (orientation: landscape ) {
+  .main-nepo {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  .titulo-bienvenida {
+    font-size: 23px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+
+  .btn-bienvenida {
+    transition: 0.3s;
+    width: 250px;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .btn-bienvenida:hover {
+    transition: 0.3s;
+    width: 270px;
+    height: 120px;
+  }
+
+  .nepo {
+    background: url('./assets/img/marcoNepomovil.svg');
+    background-repeat: no-repeat;
+    width: 690px;
+    height: 309px;
+    margin: 70px auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .quadrant-1 {
+    width: 85px;
+    height: 120px;
+    margin-left: 17px;
+  }
+
+  .quadrant-2 {
+    width: 124px;
+    height: 115px;
+    margin-left: 19px;
+  }
+
+  .quadrant-3 {
+    width: 85px;
+    height: 133px;
+    margin-left: 16px;
+  }
+
+  .quadrant-4 {
+    width: 124px;
+    height: 133px;
+    margin-left: 19px;
+  }
+
+  .bottom {
+    margin-bottom: -26px;
+  }
+
+  .column-1 {
+    justify-content: center;
+  }
+
+  .column-2 {
+    justify-content: center;
+  }
+
+  .column-3 {
+    justify-content: center;
+  }
+
+  .pantalla-basico {
+    width: 690px;
+    height: 16px;
+    margin-top: -15px;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
