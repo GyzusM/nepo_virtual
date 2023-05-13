@@ -427,7 +427,7 @@ video {
   .navToggle {
     display: flex !important;
     flex-direction: column;
-    margin-left: 30px;
+    margin: 10px;
     cursor: pointer;
   }
   
@@ -451,5 +451,26 @@ video {
 
   .navToggle.open > span:nth-child(3) {
     transform: rotate(-45deg) translate(-5px, 1px);
+  }
+}
+
+@media (max-width: 905px){
+  .menu .column .row .link {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .column {
+    top: 40px;
+  }
+  
+  .encabezado .contentHeader .logoNepo {
+    width: 40%;
+    height: 40%;
+  }
+
+  .encabezado .contentHeader .row .link {
+    font-size: 18px;
   }
 }
