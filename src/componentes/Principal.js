@@ -22,22 +22,22 @@ const Principal = () => {
           <nav className="menu">
             <ul className={`column ${isOpen && "open"}`}>
               <li className="row">
-                <a href='#' className="link">INICIO</a>
+                <a href='#inicio' className="link">INICIO</a>
               </li>
               <li className="row">
-                <a href='#' className="link">ACERCA DE</a>
+                <a href='#acercade' className="link">ACERCA DE</a>
               </li>
               <li className="row">
-                <a href='#' className="link">COMO SE USA</a>
+                <a href='#comoseusa' className="link">COMO SE USA</a>
               </li>
               <li className="row">
-                <a href='#' className="link">BENEFICIOS</a>
+                <a href='#beneficios' className="link">BENEFICIOS</a>
               </li>
               <li className="row">
-                <a href='#' className="link">NOSOTROS</a>
+                <a href='#nosotros' className="link">NOSOTROS</a>
               </li>
               <li className="row">
-                <a href='#' className="link">CONTACTO</a>
+                <a href='#contacto' className="link">CONTACTO</a>
               </li>
               <li className="row">
                 <a href='https://nepohual-tzintzin.com.mx/moodle/' className="link">EDUNEPO</a>
@@ -53,7 +53,7 @@ const Principal = () => {
           
         </div>
       </header>
-      <section className={styles.inicio}>
+      <section className={styles.inicio} id='inicio'>
         <div className={styles.contentInicio}>
           <p className={styles.bienvenida}>BIENVENIDOS</p>
           <h1>Nepohualtzintzin</h1>
@@ -66,7 +66,7 @@ const Principal = () => {
         </div>
       </section>
 
-      <section className={styles.acercade}>
+      <section className={styles.acercade} id='acercade'>
         <div className={styles.contentAcercade}>
           <h2>ACERCA DE</h2>
           <h3>NEPOHUALTZINTZIN</h3>
@@ -80,14 +80,14 @@ const Principal = () => {
           <div className={styles.containerVideo}>
             <iframe 
               src="https://www.youtube.com/embed/hAguW0j1pbE?autoplay=1&muted=1" loading="lazy" title="México: El ombligo de la Luna | cortometraje completo | Gabriel Retes" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              frameborder="0" llow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowFullScreen>
             </iframe>
             <p> Cortometraje "México: El ombligo de la luna" por Gabriel Retes. Extraído de: https://youtu.be/hAguW0j1pbE</p> 
           </div>
         </div>
       </section>
 
-      <section className={styles.comoseusa}>
+      <section className={styles.comoseusa} id='comoseusa'>
         <div className={styles.row1}>
           <h1>¿CÓMO SE USA?</h1>
           <p>En está galería de videos se encuentra toda la ayuda que necesitas para aprender a sumar, restar, multiplicar y dividir con el Nepohualtzintzin.</p>
@@ -97,9 +97,9 @@ const Principal = () => {
             <h4><i className="fa-solid fa-plus"></i> Suma</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/2aijAaT-jXo" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/gqZFPyQUmB0" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/N4GJxXh0PNc" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/2aijAaT-jXo" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/gqZFPyQUmB0" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/N4GJxXh0PNc" title="Video de suma con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
         <div className={styles.row3}>
@@ -107,9 +107,9 @@ const Principal = () => {
             <h4><i className="fa-solid fa-minus"></i> Resta</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/3937ufmAYNY" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/tWcTX4xKPqk" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/5jMJlDltaJA" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/ZcsI7k3oPIU" title="Resta Indirecta nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/tWcTX4xKPqk" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/5jMJlDltaJA" title="Video de resta con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
         <div className={styles.row2}>
@@ -117,9 +117,9 @@ const Principal = () => {
             <h4><i className="fa-solid fa-xmark"></i> Multiplicación</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/zoHjhHa5tXY" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/2CINBskt2sI" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/KGmOyZz3FXY" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/zoHjhHa5tXY" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/2CINBskt2sI" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/KGmOyZz3FXY" title="Video de Multiplicacion con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
         <div className={styles.row3}>
@@ -127,14 +127,14 @@ const Principal = () => {
             <h4><i className="fa-solid fa-divide"></i> División</h4>
           </div>
           <div className={styles.contentvideos}>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/26tL8CpbDek" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/LJf0wJG5JV8" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width={460} height={215} src="https://www.youtube.com/embed/bdSOYGOytvU" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/26tL8CpbDek" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/LJf0wJG5JV8" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width={460} height={215} src="https://www.youtube.com/embed/bdSOYGOytvU" title="Video de division con el Nepohualtzintzin" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
         </div>
       </section>
 
-      <section className={styles.beneficios}>
+      <section className={styles.beneficios} id='beneficios'>
         <h3 className={styles.titleBeneficios}>BENEFICIOS</h3>
         <div className={styles.rowBeneficios}>
           <div className={styles.boxBeneficio}>
@@ -178,7 +178,7 @@ const Principal = () => {
         </div>
       </section>
 
-      <section className={styles.nosotros}>
+      <section className={styles.nosotros} id='nosotros'>
         <h1>Nosotros</h1>
         <div className={styles.rowTeam}>
           <div className={styles.member}>
@@ -199,7 +199,7 @@ const Principal = () => {
         </div>
       </section>
       
-      <section className={styles.contacto}>
+      <section className={styles.contacto} id='contacto'>
         <h3>Contáctanos ahora</h3>
         <div className={styles.contentForm}>
           <form action="https://formsubmit.co/nepohualtzintzin91@gmail.com" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">

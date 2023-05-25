@@ -3,6 +3,7 @@ import Grano from './elements/Grano';
 import './elements/grano.css';
 import src from '../assets/img/mascotaMini.png';
 import MenuBienvenida from './MenuBienvenida';
+import golpeMaiz from '../assets/golpe_plastico.wav';
 
 const NepoMult = () => {
   const [counter, setCounter] =useState(0);
@@ -10,8 +11,11 @@ const NepoMult = () => {
   const [counternumB, setNumB] = useState(0);
   const [toMenu, setToMenu] = useState(false);
 
+
   function counterLogic(e){
-    
+    const audio = document.querySelector(".audio");
+
+    audio.play();
     /*-- GRANOS GRISES SUPERIORES -- */
     //Pregunta si el grano que se presiono es el Gris de la fila y cuadrante superior
     if (e.target.classList[3] === "gUp1"){
@@ -1154,7 +1158,7 @@ const NepoMult = () => {
           </nav>
         </div>
       </header>
-    
+      <audio className='audio' src={golpeMaiz}/>
       <div className='nepo-multiplicacion'>
       
         <div className='quadrant-1'>
