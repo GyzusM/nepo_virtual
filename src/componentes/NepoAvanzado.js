@@ -1286,10 +1286,10 @@ const NepoAvanzado = () => {
             <Grano onClick={event => {counterLogic(event)}} green r4 className='yDown9' />
           </div>
           <div className='column-2'>
-            <Grano onClick={event => {counterLogic(event)}} green r1 className='yDown8' />
-            <Grano onClick={event => {counterLogic(event)}} green r2 className='yDown7' />
-            <Grano onClick={event => {counterLogic(event)}} green r3 className='yDown6' />
-            <Grano onClick={event => {counterLogic(event)}} green r4 className='yDown5' />
+            <Grano onClick={event => {counterLogic(event)}} blue r1 className='yDown8' />
+            <Grano onClick={event => {counterLogic(event)}} blue r2 className='yDown7' />
+            <Grano onClick={event => {counterLogic(event)}} blue r3 className='yDown6' />
+            <Grano onClick={event => {counterLogic(event)}} blue r4 className='yDown5' />
           </div>
           <div className='column-3'>
             <Grano onClick={event => {counterLogic(event)}} yellow r1 className='yDown4' />

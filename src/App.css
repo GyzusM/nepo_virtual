@@ -375,6 +375,7 @@ video {
   width: 22%;
   height: 22%;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .column {
