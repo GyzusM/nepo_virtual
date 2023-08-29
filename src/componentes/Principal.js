@@ -2,8 +2,11 @@ import React, {useState} from 'react';
 import styles from './Principal.module.css';
 import '../App.css';
 import logoNepo from '../assets/img/logo_nepo.png'
-import yo from '../assets/img/verdeArriba.svg'
+import jesus from '../assets/img/jesus.jpg'
+import estefania from '../assets/img/estefania.jpg'
+import gaspar from '../assets/img/gaspar.jpg'
 import MenuBienvenida from './MenuBienvenida';
+
 const Principal = () => {
   const [showMain, hideMain] =useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -182,17 +185,17 @@ const Principal = () => {
         <h1>Nosotros</h1>
         <div className={styles.rowTeam}>
           <div className={styles.member}>
-            <img src={yo} alt="Programador de Nepo App para la Web"/>
+            <img src={jesus} alt="Programador de Nepo App para la Web"/>
             <h2>Jesús Morán</h2>
             <p>Programador</p>
           </div>
           <div className={styles.member}>
-            <img src={yo} alt="Diseñadora para la web Nepohualtzintzin"/>
+            <img src={estefania} alt="Diseñadora para la web Nepohualtzintzin"/>
             <h2>Paola Estefanía</h2>
             <p>Diseñador web</p>
           </div>
           <div className={styles.member}>
-            <img src={yo} alt="Asesor de Proyecto para la Web y Nepohualtzintzin Digital"/>
+            <img src={gaspar} alt="Asesor de Proyecto para la Web y Nepohualtzintzin Digital"/>
             <h2>Dr. Gaspar García</h2>
             <p>Asesor de proyecto</p>
           </div>
