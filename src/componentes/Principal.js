@@ -10,7 +10,6 @@ import MenuBienvenida from './MenuBienvenida';
 const Principal = () => {
   const [showMain, hideMain] =useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
   return ( 
     <>
     {showMain === false ?
@@ -44,6 +43,9 @@ const Principal = () => {
               </li>
               <li className="row">
                 <a href='https://nepohual-tzintzin.com.mx/moodle/' className="link">EDUNEPO</a>
+              </li>
+              <li className="row">
+                <a href='#planes' className="link">PLANES</a>
               </li>
             </ul>
 
@@ -181,6 +183,35 @@ const Principal = () => {
         </div>
       </section>
 
+      <section className={styles.planes} id='planes'>
+        <h2 className={styles.titlePlanes}>Planes</h2>
+        <div className={styles.cajaPlanes}>
+          <h2 className={styles.titleCaja}>Plan Freemium</h2>
+          <div className={styles.contentCaja}>
+            <ul>
+              <li><p>✅ Acceso a la recopilcacion de videos del sitio</p></li>
+              <li><p>✅ Acceso al Nepo Básico</p></li>
+              <li><p>✅ Acceso al Nepo Avanzado</p></li>
+              <li><p>✅ Acceso al Nepo con ayuda para Multiplicar y Dividir</p></li>
+              <li><p>❌ Sin Acceso a EduNepo</p></li>
+            </ul>
+            <p><strong>GRATIS</strong></p>
+          </div>
+        </div>
+        <div className={styles.cajaPlanes}>
+          <h2 className={styles.titleCaja}>Plan Premium</h2>
+          <div className={styles.contentCaja}>
+            <ul>
+              <li><p>✅ Acceso a la recopilcacion de videos del sitio</p></li>
+              <li><p>✅ Acceso al Nepo Básico</p></li>
+              <li><p>✅ Acceso al Nepo Avanzado</p></li>
+              <li><p>✅ Acceso al Nepo con ayuda para Multiplicar y Dividir</p></li>
+              <li><p>✅ Acceso a EduNepo</p></li>
+            </ul>
+            <p><strong>$200</strong></p>
+          </div>
+        </div>
+      </section>
       <section className={styles.nosotros} id='nosotros'>
         <h1>Nosotros</h1>
         <div className={styles.rowTeam}>
