@@ -5,6 +5,7 @@ import src from '../assets/img/mascotaMini.png';
 import MenuBienvenida from './MenuBienvenida';
 import golpeMaiz from '../assets/golpe_plastico.wav';
 import { motion } from 'framer-motion';
+import GenAleatorio from './GenAleatorio';
 
 const NepoBasico = () => {
   const [counter, setCounter] =useState(0);
@@ -1132,7 +1133,6 @@ const NepoBasico = () => {
     }
   }
 
-  
   return (
     <motion.div 
       className='main-nepo' 
@@ -1167,6 +1167,7 @@ const NepoBasico = () => {
         </div>     
       </header>
       <audio className='audio' src={golpeMaiz}/>
+      
       <div className='nepo'>
         <div className='quadrant-1'>
           <div className='column-1'>
@@ -1366,6 +1367,7 @@ const NepoBasico = () => {
           </div>
         </div>
       </div>
+      <GenAleatorio/>
     </>
     : <MenuBienvenida/>}
     </ motion.div>

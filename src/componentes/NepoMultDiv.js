@@ -3,6 +3,7 @@ import Grano from './elements/Grano';
 import './elements/grano.css';
 import src from '../assets/img/mascotaMini.png';
 import MenuBienvenida from './MenuBienvenida';
+import GenAleatorio from './GenAleatorio';
 import golpeMaiz from '../assets/golpe_plastico.wav';
 import { motion } from 'framer-motion';
 
@@ -1149,7 +1150,7 @@ const NepoMult = () => {
       exit="exit"  
     >
     {toMenu === false ? 
-    <>
+    <> 
       <header>
         <div className='content-header'>
           <div className='logo' onClick={() => setToMenu(true)}>
@@ -1382,6 +1383,7 @@ const NepoMult = () => {
           </div>
         </div>
       </div>
+      <GenAleatorio/>
     </>
     : <MenuBienvenida/>}
     </motion.div>

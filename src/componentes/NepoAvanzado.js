@@ -5,6 +5,7 @@ import src from '../assets/img/mascotaMini.png';
 import MenuBienvenida from './MenuBienvenida';
 import golpeMaiz from '../assets/golpe_plastico.wav';
 import { motion } from 'framer-motion';
+import GenAleatorio from './GenAleatorio';
 
 const NepoAvanzado = () => {
   const [counter, setCounter] =useState(0);
@@ -1362,6 +1363,7 @@ const NepoAvanzado = () => {
           </div>
         </div>
       </div>
+      <GenAleatorio/>
     </>
     : <MenuBienvenida/>}
     </motion.div>

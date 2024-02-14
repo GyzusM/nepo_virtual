@@ -11,6 +11,7 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   padding: 5px 0;
   background: url('./assets/img/fondo_animado.png');
@@ -83,6 +84,13 @@ header .content-header nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+}
+
+.btn-idioma{
+  background: none;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 header .content-header nav ul li{
@@ -180,7 +188,9 @@ video {
 .nepo {
   background: url(./assets/img/nepo.svg);
   background-repeat: no-repeat;
-  margin: 150px auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
   width: 1154px;
   height: 590px;
   display: flex;
@@ -408,6 +418,111 @@ video {
   display: none;
 }
 
+/* GENERADOR DE OPERACIONES */
+.gen{
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background: #fff;
+  border-radius: 5px;
+  width: 900px;
+  height: auto;
+}
+
+.gen h3{
+  display: flex;
+  align-content: flex-start;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #f2b000;
+}
+
+.gen h4{
+  display: flex;
+  align-content: flex-start;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.gen .border-title{
+  width: 30%;
+  height: 2px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to left, transparent 5%, #f2b000);
+  
+}
+
+.button-gen{
+  width: 100px;
+  height: 40px;
+  margin: 0 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: bold;
+  transition: .5s;
+  background-color: rgb(215, 141, 5);
+  cursor: pointer;
+}
+
+.button-gen:hover{
+  background-color: rgb(248, 172, 29);
+}
+
+.op-top{
+  flex-flow: row;
+  margin: 0 20px;
+}
+
+.op-top span{
+  display: inline-block;
+  width: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.op-bottom{
+  flex-flow: row;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.num-top{
+  display: inline-flex;
+  width: 85px;
+  margin-top: 20px;
+  font-size: 20px;
+  color:#000;
+}
+
+
+.num-bottom{
+  display: inline-flex;
+  width: 85px;
+  margin-left: 30px;
+  font-size: 20px;
+  color:#000;
+  border-bottom: 2px solid #000;
+}
+
+.contain-menuOp{
+  display: inline-flex;
+  flex-flow: row;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.menu-op{
+  width: 30%;
+  margin-left: 5px;
+  font-size: 16px;
+}
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 819px) {
@@ -479,7 +594,6 @@ video {
 
 @media (max-width: 420px) {
   /*MAIN NEPO*/
-
   .nepo-multiplicacion {
     background: url('./assets/img/marcoNepoMult.svg');
     background-repeat: no-repeat;
@@ -647,6 +761,50 @@ video {
     padding: 5px;
     width: 300px;
   }
+  
+  .gen{
+    width: 360px;
+  }
+
+  .contain-menuOp{
+    margin-left: 0px;
+    justify-content: space-evenly;
+  }
+
+  .menu-op{
+    width: 27%;
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .button-gen {
+    margin: 0;
+  }
+
+  .op-top span{
+    width: 15px;
+    font-size: 12px;
+  }
+
+  .op-top{
+    margin: 0 10px;
+  }
+
+  .op-bottom{
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+
+  .num-top{
+    width: 50px;
+    font-size: 12px;
+  }
+
+  .num-bottom{
+    width: 50px;
+    margin-left: 15px;
+    font-size: 12px;
+  }
 }
 
 /*-- MOBILE HORIZONTAL ORIENTATION --*/
@@ -774,6 +932,10 @@ video {
     font-size: 15px;
     font-weight: 500;
   }
+
+  .gen{
+    width: 660px;
+  }
 }
 
 @media (min-width: 768px) and (orientation: portrait ) {
@@ -900,12 +1062,27 @@ video {
     font-size: 15px;
     font-weight: 500;
   }
+
+  .gen{
+    width: 660px;
+  }
+
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 1025px) and (orientation: landscape) {
   
   .nepo-multiplicacion {
     background: url('./assets/img/marcoNepoMultH.svg');
+    background-repeat: no-repeat;
+    width: 690px;
+    height: 309px;
+    margin: 70px auto;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .nepo {
+    background: url('./assets/img/marcoNepomovil.svg');
     background-repeat: no-repeat;
     width: 690px;
     height: 309px;
@@ -919,6 +1096,14 @@ video {
     height: 36px;
     font-size: 10px;
     margin-top: -25px;
+    justify-content: center;
+  }
+
+  .pantalla-basico {
+    width: 690px;
+    height: 15px;
+    font-size: 20px;
+    margin-top: -20px;
     justify-content: center;
   }
 

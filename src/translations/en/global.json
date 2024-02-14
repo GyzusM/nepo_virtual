@@ -1,0 +1,64 @@
+{
+  "menu": {
+    "inicio": "HOME",
+    "acercade": "ABOUT",
+    "comoseusa": "HOW TO USE",
+    "beneficios": "BENEFITS",
+    "nosotros": "ABOUT US",
+    "contacto": "CONTACT"
+  },
+  "inicio": {
+    "bienvenida": "WELCOME",
+    "significado": "«Ne», which means person, «pohual or pohualli», which means account and «tzintzin», which means transcend. The meaning of the word nepohualtzintzin then is «the person who has the knowledge of the account of simplicity to transcend».",
+    "boton": "GO TO NEPOHUALTZINTZIN"
+  },
+  "acercade": {
+    "titulo":"ABOUT",
+    "subtitulo":"A MAYAN ABACUS",
+    "contenido": "It is a calculating instrument of pre-Hispanic origin whose creation is attributed to the Mayan world, although similar instruments have been found in the Olmec and Mexica cultures. Originally, the grid could be drawn on the ground, using small stones or seeds. The number of beads (91) refers to the agricultural cycles since they are approximately equivalent to one season (the fourth part of the solar year) and corresponds exactly to the middle of the corn cycle, whose grain emulates the shape of the beads. The beads corresponding to the four rows at the bottom have a value of one unit, while the three upper rows represent five units each. From right to left, the rods represent the units, tens, hundreds, thousands... and so on.",
+    "pievideo": "Short film 'Mexico: The navel of the moon' by Gabriel Retes. Retrieved from: https://youtu.be/hAguW0j1pbE"
+  },
+  "comoseusa": {
+    "titulo": "HOW TO USE?",
+    "contenido": "In this video gallery you will find all the help you need to learn how to add, subtract, multiply and divide with the Nepohualtzintzin.",
+    "suma": "Addition",
+    "resta": "Substraction",
+    "multiplicacion": "Multiplication",
+    "division": "Division"
+  },
+  "beneficios": {
+    "titulo": "BENEFITS",
+    "subtitulo1": "Logical-mathematical reasoning",
+    "subtitulo2": "Thinking skills",
+    "subtitulo3": "Oculo-manual coordination",
+    "subtitulo4": "Fine motor coordination",
+    "subtitulo5": "Troubleshooting",
+    "subtitulo6": "Memory",
+    "contenido1": "It is the ability one has, or not, to look at numbers, understand them and know how to perform operations with them.",
+    "contenido2": "It is the capacity and disposition for the development of mental processes that contribute to the resolution of everyday problems.",
+    "contenido3": "It is the ability to coordinate hand movements with visual information.",
+    "contenido4": "It is the ability to coordinate hand movements with visual information.",
+    "contenido5": "The ability to identify a problem, take logical steps to find a desired solution, and monitor and evaluate the implementation of that solution.",
+    "contenido6": "Memory is the mental capacity that enables a subject to record, conserve and evoke experiences (ideas, images, events, feelings, etc.)."
+  },
+  "nosotros": {
+    "titulo": "ABOUT US",
+    "descripcion1": "Web Developer",
+    "descripcion2": "Web Designer",
+    "descripcion3": "Project Advisor"
+  },
+  "contacto": {
+    "titulo": "Contact Us Now",
+    "input1": "First Name and Last Name",
+    "input2": "Email",
+    "input3": "Phone number",
+    "input4": "Message...",
+    "boton": "Send"
+  },
+  "nepo": {
+    "bienvenida": "Welcome to Nepohualtzintzin",
+    "boton1": "Basic addition and subtraction",
+    "boton2": "Advanced Addition and Subtraction",
+    "boton3": "Multiplication and division"
+  }
+}
