@@ -6,5 +6,14 @@ Un instrumento matemático desarrollado por la cultura maya que permite explorar
 Actualmente no se encuentra desplegado en un Web Host
 Previamente desplegado en www.nepohual-tzintzin.com.mx
 
+Puedes encontrar
 
+-Videos donde se enseña a realizar las operaciones matemáticas0️⃣
+-Nepohualtzintzin, con un diseño basado en la metología Montessori🧮
+-Nepohualtintzin divido en tres niveles:
+  ➕Suma y Resta Basico
+  ✖Multiplicacion y Division
+  ➗Avanzado
+-Generador de operaciones para poder practicar desde cualquier pantalla📱
+  
 Vite + React + Styled Components
