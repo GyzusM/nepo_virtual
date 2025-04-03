@@ -17,7 +17,7 @@ Puedes encontrar
 
   ➕Suma y Resta Basico
   
-  ✖Multiplicacion y Division
+  ✖Multiplicación y División
   
   ➗Avanzado
   
