@@ -1,0 +1,70 @@
+{
+  "menu": {
+    "inicio": "INICIO",
+    "acercade": "ACERCA DE",
+    "comoseusa": "CÓMO SE USA",
+    "beneficios": "BENEFICIOS",
+    "nosotros": "ACERCA DE",
+    "contacto": "CONTACTO"
+  },
+  "inicio": {
+    "bienvenida": "BIENVENIDOS",
+    "significado": "Ne», que significa «persona», «pohual o pohualli», que significa «cuenta» y «tzintzin», que significa «trascender». El significado de la palabra nepohualtzintzin entonces es «la persona que tiene el conocimiento de la cuenta de la simplicidad para trascender».",
+    "boton": "IR A NEPOHUALTZINTZIN"
+  },
+  "acercade": {
+    "titulo":"ACERCA DE",
+    "subtitulo":"UN ÁBACO MAYA",
+    "contenido": "Es un instrumento de cálculo de origen prehispánico cuya creación se atribuye al mundo maya, aunque se han encontrado instrumentos similares en las culturas olmeca y mexica. En origen, la cuadrícula podía dibujarse en el suelo, utilizando pequeñas piedras o semillas. El número de cuentas (91) remite a los ciclos agrícolas ya que equivalen aproximadamente a una estación (la cuarta parte del año solar) y corresponde exactamente a la mitad del ciclo del maíz, cuyo grano emula la forma de las cuentas. Las cuentas correspondientes a las cuatro filas de la parte inferior tienen valor de una unidad mientras que las tres filas superiores representan cinco unidades cada una. De derecha a izquierda, las varillas representas las unidades, decenas, centenas, unidades de millar... y así sucesivamente.",
+    "pievideo": "Cortometraje 'México: El ombligo de la luna' por Gabriel Retes. Extraído de: https://youtu.be/hAguW0j1pbE"
+  },
+  "comoseusa": {
+    "titulo": "¿CÓMO SE USA?",
+    "contenido": "En está galería de videos se encuentra toda la ayuda que necesitas para aprender a sumar, restar, multiplicar y dividir con el Nepohualtzintzin.",
+    "suma": "Suma",
+    "resta": "Resta",
+    "multiplicacion": "Multiplicacion",
+    "division": "División"
+  },
+  "beneficios": {
+    "titulo": "BENEFICIOS",
+    "subtitulo1": "Razonamiento lógico-matemático",
+    "subtitulo2": "Habilidades del pensamiento",
+    "subtitulo3": "Coordinación Óculo Manual",
+    "subtitulo4": "Coordinación Motriz Fina",
+    "subtitulo5": "Resolución de problemas",
+    "subtitulo6": "Memoria",
+    "contenido1": "Es la capacidad que se tiene, o no, de mirar los números, entenderlos y saber cómo poder hacer operaciones con ellos.",
+    "contenido2": "Es la capacidad y disposición para el desarrollo de procesos mentales, que contribuyan a la resolución de problemas de la cotidianidad.",
+    "contenido3": "Es la capacidad de coordinar el movimiento de las manos con la información visual.",
+    "contenido4": "Es la coordinación de músculos, huesos y nervios para producir movimientos pequeños y precisos.",
+    "contenido5": "La capacidad para identificar un problema, tomar medidas lógicas para encontrar una solución deseada, y supervisar y evaluar la implementación de tal solución.",
+    "contenido6": "La memoria es la capacidad mental que posibilita a un sujeto registrar, conservar y evocar las experiencias (ideas, imágenes, acontecimientos, sentimientos, etc. )."
+  },
+  "nosotros": {
+    "titulo": "ABOUT US",
+    "descripcion1": "Desarrollador Web",
+    "descripcion2": "Diseñador Web",
+    "descripcion3": "Asesor de Proyecto"
+  },
+  "contacto": {
+    "titulo": "Contáctanos ahora",
+    "input1": "Nombre completo",
+    "input2": "Correo Electrónico",
+    "input3": "Número de Teléfono",
+    "input4": "Mensaje...",
+    "boton": "Enviar"
+  },
+  "nepo": {
+    "bienvenida": "Bienvenido a Nepohualtzintzin",
+    "boton1": "Suma y Resta Básico",
+    "boton2": "Suma y Resta Avanzado",
+    "boton3": "Multiplicación y División",
+    "comoseusa": "¿Cómo se usa?",
+    "sesion": "Iniciar Sesión"
+  },
+  "generador" : {
+    "generador": "Generador de operaciones",
+    "generar": "Generar"
+  }
+}
