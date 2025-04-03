@@ -23,5 +23,7 @@ Puedes encontrar
   
 
 -Generador de operaciones para poder practicar desde cualquier pantalla📱
-  
-Vite + React + Styled Components
+
+Disponible en Ingles🇬🇧 y Español🇪🇸
+
+👨‍💻Vite + React + Styled Components
