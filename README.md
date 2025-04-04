@@ -4,7 +4,7 @@ Proyecto Desarrollado para enseñanza de matematicas con Nepohualtzintzin🧮.
 
 Un instrumento matemático desarrollado por la cultura maya que permite explorar una nueva alternativa en la enseñanza matemática0️⃣
 
-Actualmente desplegado en www.nepo-virtual.onrender.com
+Actualmente desplegado en nepo-virtual.onrender.com
 
 Previamente desplegado en www.nepohual-tzintzin.com.mx
 
